@@ -76,7 +76,7 @@ export default function Taskbar({currentPage}) {
                 </Link>
                 <Link href = "https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" target="_blank" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left p-2 flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
-                    <Image src='/Figma-logo.svg' width={32} height={32} alt="Figma icon" className="w-8 h-8 object-contain" /> 
+                    <Image src='/figma-logo.svg' width={32} height={32} alt="Figma icon" className="w-8 h-8 object-contain" /> 
                     <span className="text-lg">Figma Prototype</span>
                   </button>
                 </Link>
