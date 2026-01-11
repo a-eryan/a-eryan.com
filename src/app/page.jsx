@@ -4,7 +4,7 @@ import TitleBar from "./ui/TitleBar";
 import Taskbar from "./ui/Taskbar";
 
 export const metadata = {
-  title: "About Me - Anthony Eryan's Portfolio", //TODO chore: figure out why this isnt working with layout.js title template
+  title: "About Me - Anthony Eryan's Portfolio", 
   description: "Anthony Eryan's portfolio home page.",
 };
 

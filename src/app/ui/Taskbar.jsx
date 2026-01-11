@@ -124,7 +124,7 @@ export default function Taskbar({currentPage}) {
           </Link>
           <div className='flex ml-auto shadow-win95-clock p-2.5 pl-0.6 gap-4 items-center '>
             <Link href="https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" title = "Portfolio Design Prototype" target="_blank" className='hover:cursor-pointer active:shadow-win95-active'>
-              <Image src = "/Figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className="inline-block  w-4 h-auto "/>
+              <Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className="inline-block  w-4 h-auto "/>
             </Link>
             <Link href = "https://www.github.com/a-eryan/a-eryan.com" title="Portfolio GitHub Repository" target="_blank" className='hover:cursor-pointer active:shadow-win95-active'>
               <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo Icon" className="inline-block w-6.5 h-auto "/>
