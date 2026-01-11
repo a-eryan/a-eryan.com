@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #C3C3C3;
+  --foreground: #000000;
+  --primary: #b94444;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --inconsola-font: 'Inconsolata', monospace;
+  --font-family-w95: var(--font-w95);
+  --font-family-inconsolata: var(--font-inconsolata);
+  --shadow-win95-button: inset -1px -1px 0 0 #000, inset 2px 2px 0 -1px #FFF, inset -2px -2px 0 0 rgba(0, 0, 0, 0.25);  
+  --shadow-win95-clock: inset -1px -1px 0 0 #FFF, inset 1px 1px 0 0 #929292;
+  --shadow-win95-program: inset -1px -1px 0 0 #000, inset 2px 2px 0 -1px #FFF, inset -2px -2px 0 0 rgba(0, 0, 0, 0.25);
+  --shadow-win95-taskbar: inset 1px 2px 0 -1px #FFF;
+  --shadow-win95-separator: inset 0 1px 0 0 rgba(0, 0, 0, 0.25), inset 0 2px 0 0 #FFF, inset 0 -1px 0 0 rgba(0, 0, 0, 0.25);
+  --shadow-win95-titlebar: inset 2px 2px 0 -1px #FFF, inset -1px -1px 0 0 #000, inset -2px -2px 0 0 rgba(0, 0, 0, 0.25);
+  --shadow-win95-active: inset 1px 1px 0 0 #000, inset -2px -2px 0 -1px #FFF, inset 2px 2px 0 0 rgba(0, 0, 0, 0.25);
+  
 }
-
+/*
+* Tailwind v4 automatically generates utility classes from these variables without needing to define them explicitly in our CSS.
+* For example, bg-[var(--color-background)] will automatically set the background color to the value of --color-background.
+*  
+*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #3c3c3c;
+    --foreground: #FFFFFF;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+
+}
+
+/*
+Without @layer, it works but might have CSS specificity issues. With @layer utilities, Tailwind knows to treat it as a utility class with proper ordering and can be combined with modifiers like hover:bg-checkered or md:bg-checkered if needed.
+The public folder is automatically mapped to the root URL path (/), so you never include public in your URLs.
+*/
+@layer utilities {
+  .bg-checkered {
+    background-image: url('/checkered-texture.svg');
+  }
+  /* .font-w95 {
+    font-family: var(--font-w95);
+  } */
+  .font-inconsolata {
+    font-family: var(--font-inconsolata);
+  }
+  .shadow-titlebar {
+    box-shadow: inset 2px 2px 0 -1px #FFF, inset -1px -1px 0 0 #000, inset -2px -2px 0 0 rgba(0, 0, 0, 0.25) !important;
+  }  
+}
+
+body::-webkit-scrollbar,
+body *::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-button,
+body *::-webkit-scrollbar-thumb,
+body *::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+}
+
+body::-webkit-scrollbar-track,
+body *::-webkit-scrollbar-track {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+}
+
+body::-webkit-scrollbar-button,
+body *::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement,
+body
+body *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
+}
+::-webkit-scrollbar-button:single-button:vertical:increment,
+body
+body *::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
+}
+::-webkit-scrollbar-button:single-button:horizontal:decrement,
+body
+body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
+}::-webkit-scrollbar-button:single-button:horizontal:increment,
+body
+
+body *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
+}::-webkit-scrollbar-corner,
+body
+
+body *::-webkit-scrollbar-corner {
+  background: silver;
 }
