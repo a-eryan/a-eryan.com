@@ -20,9 +20,15 @@ export default function Projects() {
             <option>Sort by: Featured</option>
             <option>Sort by: Oldest</option>
           </select> */}
-        </div>  
-        <div className="flex flex-wrap gap-4 m-2.5 items-stretch justify-center pb-16">
-          <Link href="/projects/fuelme" className="shadow-win95-button p-4 flex flex-col w-1/5 gap-2 hover:shadow-win95-button-hover min-w-70">
+        </div> 
+        {/*
+          Mobile: w-full - Full width (1 card per row)
+          Medium: w-[calc(50%-0.5rem)] - 2 cards per row (accounts for gap)
+          Large: w-[calc(33.333%-0.67rem)] - 3 cards per row
+          XL: w-[calc(20%-0.8rem)] - 5 cards per row (original layout)        
+        */} 
+        <div className="flex flex-wrap gap-4 m-2.5 pb-16 ">
+          <Link href="/projects/fuelme" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/fuelme-preview.png" width={3200} height={2100} alt="FuelMe project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-lg text-center underline hover:text-primary">FuelMe</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
@@ -40,7 +46,7 @@ export default function Projects() {
             <p className="text-sm leading-relaxed text-center">Nutrition tracking app for achieving fitness goals through personalized macro targets.</p>
           </Link>
           
-          <Link href="/projects/sentiment-analysis.ai" className="shadow-win95-button p-4 flex flex-col w-1/5  gap-2 hover:shadow-win95-button-hover min-w-70">
+          <Link href="/projects/sentiment-analysis.ai" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/sentiment-analysis.ai.png" width={3200} height={2100} alt="sentiment-analysis.ai project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-lg text-center underline hover:text-primary">sentiment-analysis.ai</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
@@ -56,15 +62,15 @@ export default function Projects() {
             <p className="text-sm leading-relaxed text-center">AI-centric SaaS high fidelity prototype.</p>
           </Link>
           
-          <Link href="/projects/better-mystevens" className="shadow-win95-button p-4 flex flex-col w-1/5 gap-2 hover:shadow-win95-button-hover min-w-70">
+          <Link href="/projects/better-mystevens" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-lg text-center underline hover:text-primary">Better MyStevens</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
               <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Icon" className="inline-block w-4 h-auto"/>
               <p className="text-center">Figma</p>
-              <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6.5 h-auto "/>
+              <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">React</p>                                                        
-              <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block h-auto "/>
+              <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">Tailwind CSS</p>                          
             </div>            
             <p className="text-sm leading-relaxed text-center">A student-researched redesigned student portal focused on improving navigation and user efficiency.</p>
@@ -73,7 +79,7 @@ export default function Projects() {
           aspect-3200/2100 forces all images to the same aspect ratio (~1.52:1)
           object-cover crops images to fit the forced aspect ratio
           */}
-          <Link href="/projects/duck-study-hub" className="shadow-win95-button p-4 flex flex-col w-1/5 gap-2 hover:shadow-win95-button-hover min-w-70">
+          <Link href="/projects/duck-study-hub" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/duck-study-hub-preview.png" width={3200} height={2100} alt="Duck Study Hub project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-lg text-center underline hover:text-primary">Duck Study Hub</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
@@ -88,7 +94,7 @@ export default function Projects() {
             </div>              
             <p className="text-sm leading-relaxed text-center">On-campus social networking app connecting students through study groups and locations.</p>
           </Link>
-          <Link href="/projects/offbrandarm-cpu" className="shadow-win95-button p-4 flex flex-col w-1/5 gap-2 hover:shadow-win95-button-hover min-w-70">
+          <Link href="/projects/offbrandarm-cpu" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/offbrandarm-cpu-preview.png" width={2559} height={1392} alt="OffBrandARM CPU project preview screenshot" className="w-full aspect-3200/2100 object-cover border-4 border-primary "/>
             <h3 className="text-lg text-center underline hover:text-primary">OffBrandARM CPU</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1" aria-label="Technologies used">
@@ -99,7 +105,7 @@ export default function Projects() {
             </div>             
             <p className="text-sm leading-relaxed text-center">Eight-bit CPU with 2² binary representation of 4 total instructions, such as memory-related operations based off the Arm® architecture.</p>
           </Link>         
-          <Link href="/projects/gemini-sentiment-analysis-study" className="shadow-win95-button p-4 flex flex-col w-1/5 gap-2 hover:shadow-win95-button-hover min-w-70">
+          <Link href="/projects/gemini-sentiment-analysis-study" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/gemini-sentiment-analysis-study-preview.png" width={3200} height={2100} alt="Gemini Sentiment Analysis Study project preview screenshot" className="w-full  aspect-3200/2100 border-4 border-primary "/>            
             <h3 className="text-lg text-center underline hover:text-primary">Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1" aria-label="Technologies used">

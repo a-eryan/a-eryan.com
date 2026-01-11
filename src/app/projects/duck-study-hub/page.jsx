@@ -33,7 +33,7 @@ export default function Projects() {
 												<p>Handlebars</p>
 												<Image src="/css-logo.svg" width={24} height={24} alt="CSS Icon" className="inline-block h-auto "/>
 												<p>CSS</p>
-												<Image src="/javascript-logo.svg" width={24} height={24} alt="JavaScript Icon" className="inline-block h-auto "/>
+												<Image src="/javascript-logo.svg" width={24} height={24} alt="JavaScript Icon" className="inline-block "/>
 												<p>JavaScript</p>                                                                          
 										</div>
 										<p> Role: UX/UI Designer & Full Stack Developer </p>

@@ -21,7 +21,7 @@ const [isDarkMode, setIsDarkMode] = useState(false);
       <nav className="flex items-center px-1 pt-1 w-full select-none ">
           <div className="bg-primary flex items-center gap-1 pl-0.5 py-1 grow">  
             <Image src={iconSource} width={18} height={18} alt={`${pageName} icon`} className="inline-block w-6.5 h-auto" />
-            <span className="text-2xl leading-none text-white font-bold">{pageName} - Anthony Eryan</span>
+            <span className="text-xl lg:text-2xl leading-none text-white font-bold">{pageName} - Anthony Eryan</span>
             
             <button className="shadow-win95-program text-2xl ml-auto bg-background hover:cursor-pointer active:shadow-win95-active">
               <Image src={isDarkMode ? "/DARK-minimize-button.png" : "/minimize-button.png"} alt="Minimize" width={88} height={88} className="w-8 h-8" />

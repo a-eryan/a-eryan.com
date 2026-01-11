@@ -63,6 +63,7 @@ The public folder is automatically mapped to the root URL path (/), so you never
   }  
 }
 
+/* Windows 95 Scrollbar */
 body::-webkit-scrollbar,
 body *::-webkit-scrollbar {
   width: 16px;
@@ -97,29 +98,30 @@ body::-webkit-scrollbar-button,
 body *::-webkit-scrollbar-button {
   background-repeat: no-repeat;
   background-size: 16px;
+  background-position: center;
 }
-::-webkit-scrollbar-button:single-button:vertical:decrement,
-body
+
+body::-webkit-scrollbar-button:single-button:vertical:decrement,
 body *::-webkit-scrollbar-button:single-button:vertical:decrement {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
 }
-::-webkit-scrollbar-button:single-button:vertical:increment,
-body
+
+body::-webkit-scrollbar-button:single-button:vertical:increment,
 body *::-webkit-scrollbar-button:single-button:vertical:increment {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
 }
-::-webkit-scrollbar-button:single-button:horizontal:decrement,
-body
+
+body::-webkit-scrollbar-button:single-button:horizontal:decrement,
 body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
-}::-webkit-scrollbar-button:single-button:horizontal:increment,
-body
+}
 
+body::-webkit-scrollbar-button:single-button:horizontal:increment,
 body *::-webkit-scrollbar-button:single-button:horizontal:increment {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
-}::-webkit-scrollbar-corner,
-body
+}
 
+body::-webkit-scrollbar-corner,
 body *::-webkit-scrollbar-corner {
   background: silver;
 }

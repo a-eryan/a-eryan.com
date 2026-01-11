@@ -12,34 +12,49 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col h-screen justify-between">
-        <div className="shadow-win95-program flex flex-col grow overflow-y-auto  pb-16">
+        <div className="shadow-win95-program flex flex-col grow pb-16">
           <TitleBar pageName="About Me" iconSource="/msg_question-1.png" />
-          <div className="m-2.5 flex  gap-6 items-start">
-            <Image src = "/LinkedInNoCircle.png" width={400} height={400} alt="Anthony Eryan's Professional Photo" className="inline-block w-48 h-auto border-6 border-primary"/>
-            <div className="flex flex-col justify-center">
-              <div className="border-b border-[rgba(0,0,0,0.25)] flex flex-row max-[822px]:flex-col items-center gap-3">
-                <h1 className="text-2xl font-bold"> Hi, I'm Anthony!</h1>
-                <Image src = "/linkedinportfolio-icon 1.svg" width={30} height={30} alt="LinkedIn Logo Icon" className="inline-block w-8 h-auto cursor-pointer mb-0.5"/>
-                <Link href="https://www.linkedin.com/in/anteryan/" className="text-lg underline underline-offset-2 hover:text-primary">
-                  /anteryan
-                </Link>
-                <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo Icon" className="inline-block w-8 h-auto cursor-pointer mb-0.5"/>
-                <Link href ="https://github.com/a-eryan" className="text-lg underline underline-offset-2 hover:text-primary">
-                  /a-eryan
-                </Link>
-                <Image src = "/mail-icon.svg" width={34} height={26} alt="Email Logo Icon" className="inline-block w-8 h-auto cursor-pointer mb-0.5"/>
-                <Link href="mailto:eryananthony@gmail.com" className="text-lg underline underline-offset-2 hover:text-primary">
-                  /eryananthony@gmail.com
-                </Link>
-              </div>
-              <p className=" text-lg leading-relaxed"> {/*leading-relaxed for better readability of body text*/}
-                Stevens Institute of Technology student majoring in Computer Science residing in the New York City Metropolitan Area.
-                I'm passionate about product design (UX/UI) with the integration of front-end web development. 
-              </p>
-            </div>
-          </div>
+<div className="lg:m-2.5 lg:gap-6 ">
+  <Image 
+    src="/LinkedInNoCircle.png" 
+    width={400} 
+    height={400} 
+    alt="Anthony Eryan's Professional Photo" 
+    className="float-none lg:float-left mx-auto lg:mx-0 lg:mr-6 w-36 lg:w-48 h-auto border-6 border-primary mb-4 lg:mb-0 mt-2.5 lg:mt-0"
+  />
+  <div className="flex flex-col justify-center">
+    <div className="border-b mx-2 lg:mx-0 border-[rgba(0,0,0,0.25)]  flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4">
+      <h1 className="text-2xl font-bold text-center lg:text-left shrink-0">Hi, I'm Anthony!</h1>
+      
+      <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center lg:justify-start items-center mb-0.5 ">
+        <Link href="https://www.linkedin.com/in/anteryan/" target="_blank" className="flex items-center gap-1 hover:text-primary shrink-0">
+          <Image src="/linkedinportfolio-icon 1.svg" width={30} height={30} alt="LinkedIn" className="w-7 h-auto"/>
+          <span className="text-base underline underline-offset-2">/anteryan</span>
+        </Link>
+        
+        <Link href="https://github.com/a-eryan" target="_blank" className="flex items-center gap-1 hover:text-primary shrink-0">
+          <Image src="/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub" className="w-7 h-auto"/>
+          <span className="text-base underline underline-offset-2">/a-eryan</span>
+        </Link>
+        
+        <Link href="mailto:eryananthony@gmail.com" target="_blank" className="flex items-center gap-1 hover:text-primary shrink-0">
+          <Image src="/mail-icon.svg" width={34} height={26} alt="Email" className="w-7 h-auto"/>
+          <span className="text-base underline underline-offset-2">
+            <span className="hidden lg:inline">eryananthony@gmail.com</span>
+            <span className="lg:hidden">Email</span>
+          </span>
+        </Link>
+      </div>
+    </div>
+    
+    <p className="text-base lg:text-lg leading-relaxed text-center lg:text-left">
+      Stevens Institute of Technology student majoring in Computer Science residing in the New York City Metropolitan Area.
+      I'm passionate about product design (UX/UI) with the integration of front-end web development.
+    </p>
+  </div>
+</div>
           <h2 className="text-xl ml-2.5 border-b border-[rgba(0,0,0,0.25)] font-bold"> Featured Projects </h2>
-            <div className="m-2.5 flex items-stretch flex-row gap-4 w-auto h-full max-w-2200 mt-4">
+            <div className="m-2.5 flex items-stretch flex-wrap lg:flex-nowrap lg:flex-row gap-4 w-auto h-full max-w-2200 mt-4">
               <Link href="/projects/better-mystevens" className="shadow-win95-button p-4 flex items-stretch flex-col w-auto gap-2  hover:shadow-win95-button-hover">
                 <Image src = "/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
                 <h3 className="text-lg text-center underline font-bold"> Better MyStevens</h3>

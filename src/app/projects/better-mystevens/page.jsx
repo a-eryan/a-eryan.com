@@ -26,16 +26,14 @@ export default function Projects() {
          
 						<div className="mb-4 ml-2.5 pb-16">
 								<h2 className="text-xl mb-2 font-bold">Project Overview</h2>
-										<div className="flex flex-row justify-start flex-wrap gap-2 text-center " aria-label="Technologies used">
+										<div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center " aria-label="Technologies used">
 											<p>Technologies Used: </p>
 											<Image src="/figma-logo.svg" width={20} height={30} alt="Figma Icon" className="inline-block w-4 h-auto"/>
 											<p>Figma</p>
 											<Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6.5 h-auto "/>
 											<p>React</p>
-											<Image src="/css-logo.svg" width={24} height={24} alt="CSS Icon" className="inline-block w-6 h-auto "/>
-											<p>CSS</p>
-											<Image src="/javascript-logo.svg" width={24} height={24} alt="JavaScript Icon" className="inline-block w-6 h-auto "/>
-											<p>JavaScript</p>                                                                          
+											<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="CSS Icon" className="inline-block w-6 h-auto "/>
+											<p>Tailwind CSS</p>                                                                         
 										</div>
 										<p> Role: UX/UI Designer & Full-Stack Developer </p>
 										<p> Timeline: February 2025 - May 2025</p>            
