@@ -31,8 +31,8 @@ export default function Projects() {
             <p>Figma</p>
             <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6 h-auto"/>
             <p>React</p>
-            <Image src="/nextjs-logo.svg" width={24} height={24} alt="Nextjs Icon" className="inline-block" />
-            <p>Nextjs</p>
+            <Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block" />
+            <p>Next.js</p>
             <Image src="/tailwind-css-logo.svg" width={24} height={24} alt="Tailwind CSS Icon" className="inline-block"/>
             <p>Tailwind CSS</p>                                                              
           </div>
@@ -57,7 +57,7 @@ export default function Projects() {
           </p>
           <h2 className="text-xl mt-4 mb-2">Results & Learning</h2>
           <p className="leading-relaxed">
-            I learned how to navigate Nextjs and the backend as a service Supabase to create a modern SaaS project without having to worry about authentication and database storage. Given the state of this project, the next steps would involve user research, such as academics, marketers, and quantitative students, to identify potential pitfalls and user experience needs. Such research could also identify whether users would prefer a more efficient form experience from a chatbot experience which is less efficient while being relatively more technically impressive.
+            I learned how to navigate Next.js and the backend as a service Supabase to create a modern SaaS project without having to worry about authentication and database storage. Given the state of this project, the next steps would involve user research, such as academics, marketers, and quantitative students, to identify potential pitfalls and user experience needs. Such research could also identify whether users would prefer a more efficient form experience from a chatbot experience which is less efficient while being relatively more technically impressive.
           </p>
         </div>
       </div>
