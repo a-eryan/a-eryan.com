@@ -36,8 +36,8 @@ export default function Projects() {
               <p className="text-center">Figma</p>
               <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">React</p>
-              <Image src="/nextjs-logo.svg" width={24} height={24} alt="Nextjs Icon" className="inline-block w-6 h-auto "/>
-              <p className="text-center">Nextjs</p>
+              <Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">Next.js</p>
               <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block h-auto "/>
               <p className="text-center">Tailwind CSS</p>                 
               <Image src="/graph-ql-logo.svg" width={24} height={24} alt="GraphQL Icon" className="inline-block w-6 h-auto "/>
@@ -54,8 +54,8 @@ export default function Projects() {
               <p className="text-center">Figma</p>
               <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">React</p> 
-              <Image src="/nextjs-logo.svg" width={24} height={24} alt="Nextjs Icon" className="inline-block w-6 h-auto "/>
-              <p className="text-center">Nextjs</p>                                                                     
+              <Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">Next.js</p>                                                                     
               <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">Tailwind CSS</p>                          
             </div>            

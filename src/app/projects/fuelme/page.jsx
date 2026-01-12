@@ -32,8 +32,8 @@ export default function Projects() {
 						<p>Figma</p>
 						<Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6.5 h-auto "/>
 						<p>React</p>
-						<Image src="/nextjs-logo.svg" width={24} height={24} alt="Nextjs Icon" className="inline-block "/>
-						<p>Nextjs</p>
+						<Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block "/>
+						<p>Next.js</p>
 						<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="Tailwind CSS Icon" className="inline-block "/>
 						<p>Tailwind CSS</p>                 
 						<Image src="/graph-ql-logo.svg" width={24} height={24} alt="GraphQL Icon" className="inline-block "/>
