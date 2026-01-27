@@ -22,7 +22,13 @@ export default function Projects() {
             <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
           </Link>
         </div>	
-        <Image src="/sentiment-analysis.ai.png" width={3200} height={2100} alt="sentiment-analysis.ai project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/>
+      <div className="w-full max-w-4xl mx-auto aspect-32/21">
+        <iframe 
+          className="w-full h-full" 
+          src="https://embed.figma.com/proto/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?page-id=0%3A1&node-id=66-167&viewport=-840%2C310%2C0.65&scaling=scale-down&content-scaling=fixed&starting-point-node-id=66%3A167&embed-host=share" 
+          allowFullScreen
+        />
+      </div>
         <div className="mb-4 ml-2.5 pb-16 ">
           <h2 className="text-xl mb-2 ">Project Overview</h2>
           <div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">

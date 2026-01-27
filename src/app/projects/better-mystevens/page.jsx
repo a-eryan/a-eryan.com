@@ -22,8 +22,10 @@ export default function Projects() {
 									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
 								</Link>
 							</div>    						     
-						<Image src="/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/>
-         
+						{/* <Image src="/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/> */}
+					<video src="/BetterMyStevensBefore-After.mp4" width={3200} height={1800} controls autoPlay muted playsInline className="w-full max-w-7xl aspect-video object-cover  mt-2 m-auto">
+						Your browser does not support the video tag.
+					</video>						
 						<div className="mb-4 ml-2.5 pb-16">
 								<h2 className="text-xl mb-2 font-bold">Project Overview</h2>
 										<div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center " aria-label="Technologies used">

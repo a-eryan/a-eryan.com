@@ -2,6 +2,7 @@ import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
 import Link from "next/link";
+import SlideShow from "@/app/ui/SlideShow";
 
 export const metadata = {
 	title: "FuelMe", 
@@ -22,8 +23,7 @@ export default function Projects() {
 							<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
 						</Link>
 					</div>	
-				
-				<Image src="/fuelme-preview.png" width={3200} height={2100} alt="FuelMe project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/>
+				<SlideShow slidesSources={["/fuelme-preview.png", "/fuelme-dashboard.png", "/fuelme-food-logs.png"]} />
 			<div className="mb-4 ml-2.5 pb-16">
 				<h2 className="text-xl mb-2 ">Project Overview</h2>
 					<div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center " aria-label="Technologies used">

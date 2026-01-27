@@ -1,6 +1,7 @@
 import {Inconsolata } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next"
 
 // const W95Font = localFont({
 //   src: "../../public/W95FA.otf",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${inconsolata.variable} antialiased font-inconsolata`}
       >
         {children} {/* all the unique components that get actively rendered in each respective page */}
+        <Analytics />
       </body>
     </html>
   );
