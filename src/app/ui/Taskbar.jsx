@@ -41,7 +41,7 @@ export default function Taskbar({currentPage}) {
                 </span>
               </div>
               {/* Menu items */}
-              <div className="flex flex-col min-w-48">
+              <div className="flex flex-col min-w-48 ">
                 <Link href="/" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/msg_question-1.png' width={32} height={32} alt="About Me page icon" className="w-8 h-8" />
