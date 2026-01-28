@@ -1,9 +1,7 @@
 "use client"; //this is a client component because it uses useState
 import Image from 'next/image'; //not statically imported -- while standard JavaScript import statements are like "import profile from './profile.png'"
 import Link from 'next/link';
-import { useState } from 'react';
-const time = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-
+import { useState, useEffect } from 'react';
 
 /*inherit's universal body tailwind utility classes from layout.js, so always put this component at the bottom, since
 it's the last child:
@@ -17,6 +15,14 @@ it's the last child:
 */
 export default function Taskbar({currentPage}) {
   const [TaskbarOpenState, setTaskbarOpenState] = useState(false);
+  const [time, setTime] = useState(new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
+    }, 60000); //update every minute
+    return () => clearInterval(interval); 
+  }, []);
   return (
     <>
       <footer className="fixed bottom-0 left-0 right-0 z-50">
@@ -123,14 +129,13 @@ export default function Taskbar({currentPage}) {
             </button>
           </Link>
           <div className='flex items-center p-0.5 ml-auto shadow-win95-clock md:p-2.5 gap-1 md:gap-4  '>
-            <Link href="https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" title = "Portfolio Design Prototype" target="_blank" className='hover:cursor-pointer active:shadow-win95-active'>
-              <Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className=" aspect-square object-contain inline-block  w-6 md:w-6.5 h-auto "/>
+            <Link href="https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" title="Portfolio Design Prototype" target="_blank" className="hover:cursor-pointer active:shadow-win95-active justify-center w-3 md:w-4.5 h-auto">
+              <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className=" object-contain" />
             </Link>
-            <Link href = "https://www.github.com/a-eryan/a-eryan.com" title="Portfolio GitHub Repository" target="_blank" className='hover:cursor-pointer active:shadow-win95-active'>
-              <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo Icon" className="inline-block w-6 md:w-6.5 h-auto "/>
+            <Link href="https://www.github.com/a-eryan/a-eryan.com" title="Portfolio GitHub Repository" target="_blank" className="hover:cursor-pointer active:shadow-win95-active justify-center w-5 md:w-6.5 h-auto">
+              <Image src="/githubportfolio-icon 1.svg" width={32} height={32} alt="Github Logo Icon" className="object-contain" />
             </Link>
-            <p>{time}</p>
-
+            <span>{time}</span>
           </div>
         </div>
       </footer>

@@ -37,6 +37,20 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  cursor: url('https://www.rw-designer.com/cursor-extern.php?id=151727'), auto;
+}
+
+button:hover, 
+a:hover, 
+[role="button"]:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover,
+[onclick]:hover {
+  cursor: url('https://www.rw-designer.com/cursor-extern.php?id=151740'), pointer;
+}
+
+h1, h2, h3, p, a {
+  cursor:text;
 }
 
 h1, h2, h3 {
@@ -60,7 +74,7 @@ The public folder is automatically mapped to the root URL path (/), so you never
   }
   .shadow-titlebar {
     box-shadow: inset 2px 2px 0 -1px #FFF, inset -1px -1px 0 0 #000, inset -2px -2px 0 0 rgba(0, 0, 0, 0.25) !important;
-  }  
+  }
 }
 
 /* Windows 95 Scrollbar */
@@ -125,3 +139,4 @@ body::-webkit-scrollbar-corner,
 body *::-webkit-scrollbar-corner {
   background: silver;
 }
+
