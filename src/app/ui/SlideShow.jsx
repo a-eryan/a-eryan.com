@@ -6,7 +6,7 @@ export default function SlideShow({ slidesSources }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto p-2">
       <div className="relative"> {/*coordinate space filled up by non absolutely positioned elements */}
         <Image src={slidesSources[currentIndex]}  width={3200} height={2100} alt={`Slide ${currentIndex + 1}`} className="w-full h-auto object-cover" />
 					{/*absolute: removed from the document flow entirely 

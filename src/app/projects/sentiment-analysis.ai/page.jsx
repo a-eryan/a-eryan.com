@@ -24,7 +24,7 @@ export default function Projects() {
         </div>	
       <div className="w-full max-w-4xl mx-auto aspect-32/21">
         <iframe 
-          className="w-full h-full" 
+          className="w-full h-full p-2" 
           src="https://embed.figma.com/proto/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?page-id=0%3A1&node-id=66-167&viewport=-840%2C310%2C0.65&scaling=scale-down&content-scaling=fixed&starting-point-node-id=66%3A167&embed-host=share" 
           allowFullScreen
         />

@@ -23,7 +23,7 @@ export default function Projects() {
 									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
 								</Link>
 							</div> 
-				<SlideShow slidesSources={["/duck-study-hub-preview.png", "/duck-study-hub-1.png", "/duck-study-hub-2.png", "/duck-study-hub-3.png"]} />
+				<SlideShow slidesSources={["/duck-study-hub-preview.png", "/duck-study-hub-2.png", "/duck-study-hub-3.png"]} />
 						<div className="mb-16 ml-2.5 ">
 								<h2 className="text-xl mb-2 ">Project Overview</h2>
 										<div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">

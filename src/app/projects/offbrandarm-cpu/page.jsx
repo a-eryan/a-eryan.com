@@ -29,8 +29,8 @@ export default function Projects() {
 			<Image src="/logisim-evolution-logo.svg" width={24} height={24} alt="Logisim Icon" className="inline-block w-6 h-auto"/>
 			<p>Logisim</p>                                                              
 		  </div>
-		  <p> Role: Assembler programmer & Digital Circuit-Designer </p>
-		  <p> Timeline: August 2025 - December 2025 </p>            
+		  <p> Role: Assembler Developer & Digital Circuit-Designer </p>
+		  <p> Timeline: November 2024 - December 2024 </p>            
 		  <p className="leading-relaxed"> 
 		   OffBrandArm CPU is an eight-bit CPU with a 2² binary representation of 4 instructions, capable of arithmetic and memory-related operations</p>
 		  <h2 className="text-xl mt-4 mb-2">Development Process</h2>

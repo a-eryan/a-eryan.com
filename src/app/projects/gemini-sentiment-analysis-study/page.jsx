@@ -20,7 +20,7 @@ Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Se
             <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
           </Link>
         </div>	
-        <Image src="/gemini-pro-sentiment-study.png" width={3220} height={953} alt="sentiment-analysis.ai project preview screenshot" className="w-full h-full object-cover mx-auto"/>
+        <Image src="/gemini-pro-sentiment-study.png" width={3220} height={953} alt="sentiment-analysis.ai project preview screenshot" className="w-full h-full object-cover mx-auto p-2"/>
         <div className="mb-4 ml-2.5 pb-16">
           <h2 className="text-xl mb-2 ">Project Overview</h2>
           <div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">
