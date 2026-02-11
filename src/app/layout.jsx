@@ -1,4 +1,5 @@
-import {Inconsolata } from "next/font/google";
+import { Inconsolata } from "next/font/google";
+import { GeistPixelSquare } from 'geist/font/pixel';
 import "./globals.css";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next"
@@ -14,6 +15,7 @@ const inconsolata = Inconsolata({
   weight: ["500"],
 });
 
+
 export const metadata = {
   title: {
     template: `%s - Anthony Eryan's Portfolio`,
@@ -26,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inconsolata.variable} antialiased font-inconsolata`}
+        className={`${GeistPixelSquare.className} antialiased`}
       >
         {children} {/* all the unique components that get actively rendered in each respective page */}
         <Analytics />
