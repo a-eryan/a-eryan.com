@@ -26,11 +26,10 @@ export default function Taskbar({currentPage}) {
   return (
     <>
       <footer className="fixed bottom-0 left-0 right-0 z-50">
-        <div className="flex md:p-1 md:gap-2 text-xs md:text-2xl shrink items-center shadow-win95-taskbar bg-background ">
-          <button className="md:gap-2 md:p-2.5  pl-0.6 shadow-win95-button flex items-center  cursor-pointer active:shadow-win95-active" onClick ={() => setTaskbarOpenState(!TaskbarOpenState)}>
-            <Image src="/anthony-95.svg" width={12} height={16} alt="Start button logo" className="inline-block w-6 md:w-6.5 h-6 md:h-auto aspect-square object-contain"/> 
-            Start
-            
+        <div className="truncate min-[457px]:p-2 max-[482px]:gap-0.5 gap-2 flex md:p-1 text-xs md:text-2xl shrink items-center shadow-win95-taskbar bg-background ">
+          <button className="p-1.5 md:p-2.5 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active shadow-win95-button" onClick ={() => setTaskbarOpenState(!TaskbarOpenState)}>
+            <Image src="/anthony-95.svg" width={12} height={16} alt="Start button logo" className="inline-block w-6 md:w-6.5 h-6 md:h-auto aspect-square object-contain"/>
+            <span className="max-[406px]:hidden">Start</span>
           </button>
           {TaskbarOpenState && (
             <div className="absolute bottom-full left-0  flex shadow-win95-button bg-background ">
@@ -41,11 +40,11 @@ export default function Taskbar({currentPage}) {
                 </span>
               </div>
               {/* Menu items */}
-              <div className="flex flex-col min-w-48 ">
+              <div className="flex flex-col min-w-48">
                 <Link href="/" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/msg_question-1.png' width={32} height={32} alt="About Me page icon" className="w-8 h-8" />
-                    <span className="text-lg">About Me</span>
+                    <span className="text-lg ">About Me</span>
                   </button>
                 </Link>
                 <Link href="/projects" onClick={() => setTaskbarOpenState(false)}>
@@ -98,7 +97,7 @@ export default function Taskbar({currentPage}) {
           {/*lossless resizing, so no need for next/image optimization. path indicates .svg so its automatically unoptimized*/}                    
 					{/*template literal trick: conditionally apply active styles if currentPage matches button page*/}
 					<Link href = "/">
-						<button className={`md:p-2.5 pl-0.6 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
+						<button className={`p-2 md:p-2.5 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
 							currentPage === 'About Me' 
 								? 'shadow-win95-active text-black bg-checkered font-bold' 
 								: 'shadow-win95-button'
@@ -108,7 +107,7 @@ export default function Taskbar({currentPage}) {
 						</button>
 					</Link>
           <Link href = "/projects">
-            <button className={`md:p-2.5 pl-0.6 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
+            <button className={`p-2 md:p-2.5 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
               currentPage === 'Projects' 
                 ? 'shadow-win95-active text-black bg-checkered font-bold' 
                 : 'shadow-win95-button'
@@ -119,7 +118,7 @@ export default function Taskbar({currentPage}) {
 					</Link>
           
           <Link href = "/resume">	
-            <button className={`md:p-2.5 pl-2.6 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
+            <button className={`p-2 md:p-2.5 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active ${
               currentPage === 'Resume' 
                 ? 'shadow-win95-active text-black bg-checkered font-bold' 
                 : 'shadow-win95-button'
@@ -128,7 +127,7 @@ export default function Taskbar({currentPage}) {
               Resume 
             </button>
           </Link>
-          <div className='flex items-center p-0.5 ml-auto shadow-win95-clock md:p-2.5 gap-1 md:gap-4  '>
+          <div className='flex items-center ml-auto shadow-win95-clock p-2 gap-1 md:gap-4  '>
             <Link href="https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" title="Portfolio Design Prototype" target="_blank" className="hover:cursor-pointer active:shadow-win95-active justify-center w-3 md:w-4.5 h-auto">
               <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className=" object-contain" />
             </Link>
