@@ -20,7 +20,7 @@ export default function Projects() {
 							<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
 						</Link>
 						<Link href = "https://lumenlabs-rose.vercel.app/" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-							<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Live Website (Preview)
+							<Image src = "/website-icon.png" width={30} height={30} alt="Website Indicator Logo" className="inline-block w-6 h-auto"/>Live Website (Preview)
 						</Link>
 					</div>	
 				<SlideShow slidesSources={["/lumen-labs-preview.png", "/lumen-labs-career-center.png", "/lumen-labs-career-center-2.png", "/lumen-labs-community-directory.png", "/lumen-labs-faculty-directory.png"]} />
