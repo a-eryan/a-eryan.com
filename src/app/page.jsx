@@ -61,20 +61,21 @@ export default function Home() {
           <p className="text-sm leading-relaxed text-center"> A student-researched redesigned student portal focused on improving navigation and user efficiency. </p>
           </Link>
         <Link href="/projects/sentiment-analysis.ai" className="shadow-win95-button p-4 flex flex-col w-auto gap-2 items-stretch hover:shadow-win95-button-hover active:shadow-win95-active">
-        <Image src = "/sentiment-analysis.ai.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
-        <h3 className="text-lg text-center underline font-bold hover:text-primary "> sentiment-analysis.ai</h3>
-        <p className="text-sm leading-relaxed text-center">AI-centric SaaS high fidelity prototype. </p>
+          <Image src = "/sentiment-analysis.ai.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
+          <h3 className="text-lg text-center underline font-bold hover:text-primary "> sentiment-analysis.ai</h3>
+          <p className="text-sm leading-relaxed text-center">AI-centric SaaS high fidelity prototype. </p>
         </Link>
+        <Link href="/projects/lumen-labs" className="shadow-win95-button p-4 flex flex-col gap-2  hover:shadow-win95-button-hover active:shadow-win95-active">
+          <Image src = "/lumen-labs-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
+          <h3 className="text-lg text-center underline font-bold hover:text-primary  "> Lumen Labs </h3>
+          <p className="text-sm leading-relaxed text-center"> AI for democratizing career prospects and research opportunities for graduate students. </p>
+        </Link>           
         <Link href="/projects/duck-study-hub" className="shadow-win95-button p-4 flex flex-col gap-2  hover:shadow-win95-button-hover active:shadow-win95-active">
-        <Image src = "/duck-study-hub-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
-        <h3 className="text-lg text-center underline font-bold hover:text-primary "> Duck Study Hub </h3>
-        <p className="text-sm leading-relaxed text-center">On-campus social networking app connecting students through  study groups and locations. </p>
+          <Image src = "/duck-study-hub-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
+          <h3 className="text-lg text-center underline font-bold hover:text-primary "> Duck Study Hub </h3>
+          <p className="text-sm leading-relaxed text-center">On-campus social networking app connecting students through  study groups and locations. </p>
         </Link>
-        <Link href="/projects/fuelme" className="shadow-win95-button p-4 flex flex-col gap-2  hover:shadow-win95-button-hover active:shadow-win95-active">
-          <Image src = "/fuelme-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
-          <h3 className="text-lg text-center underline font-bold hover:text-primary  "> FuelMe </h3>
-          <p className="text-sm leading-relaxed text-center"> Nutrition tracking app for achieving fitness goals through  personalized macro targets. </p>
-        </Link>                            
+                         
       </div>
       <Link href="/projects" className="ml-2.5 text-md underline underline-offset-2 hover:text-primary">
         View All Projects
@@ -88,7 +89,7 @@ export default function Home() {
         <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
         <h3 className="text-lg font-bold">Client Solutions Manager Intern, Meta</h3>
         <Image src ="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
-        <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - Present</p>
+        <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - 04/2026</p>
         <Image src ="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
         <p>New York, NY | 01/2022 - 07/2022</p>
       </div>

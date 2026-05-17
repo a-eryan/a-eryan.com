@@ -28,6 +28,21 @@ export default function Projects() {
           XL: w-[calc(20%-0.8rem)] - 5 cards per row (original layout)        
         */} 
         <div className="flex flex-wrap gap-4 m-2.5 pb-16 ">
+          <Link href="/projects/lumen-labs" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
+            <Image src="/lumen-labs-preview.png" width={3200} height={2100} alt="Lumen Labs project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
+            <h3 className="text-lg text-center underline hover:text-primary">Lumen Labs</h3>
+            <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
+              <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Icon" className="inline-block w-4 h-auto"/>
+              <p className="text-center">Figma</p>
+              <Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">React</p>
+              <Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">Next.js</p>
+              <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">Tailwind CSS</p>
+            </div>
+            <p className="text-sm leading-relaxed text-center">AI for democratizing career prospects and research opportunities for graduate students.</p>
+          </Link>
           <Link href="/projects/fuelme" className="shadow-win95-button p-4 flex flex-col w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] gap-2 hover:shadow-win95-button-hover">
             <Image src="/fuelme-preview.png" width={3200} height={2100} alt="FuelMe project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-lg text-center underline hover:text-primary">FuelMe</h3>
