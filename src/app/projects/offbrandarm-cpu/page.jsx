@@ -1,7 +1,6 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
   title: "OffBrandARM CPU ", //TODO chore: figure out why this isnt working with layout.js title template
@@ -15,9 +14,9 @@ export default function Projects() {
 		<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
 		<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
 		  <h1 className="text-2xl text-center flex justify-between font-bold p-1">OffBrandARM CPU</h1>
-		  <Link href = "https://github.com/a-eryan/OffBrandARM-CPU" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-			<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-		  </Link>
+		  <a href = "https://github.com/a-eryan/OffBrandARM-CPU" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+			<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
+		  </a>
 		</div>	
 		<Image src="/offbrandarm-cpu-preview.png" width={3200} height={2100} alt="OffBrandARM CPU project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/>
 		<div className="mb-4 ml-2.5 pb-16">

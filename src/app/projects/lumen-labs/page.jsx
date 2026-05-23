@@ -1,7 +1,6 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
-import Link from "next/link";
 import SlideShow from "@/app/ui/SlideShow";
 
 export const metadata = {
@@ -16,12 +15,12 @@ export default function Projects() {
 				<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
 					<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
 						<h1 className="text-2xl text-center flex justify-between font-bold p-1">Lumen Labs</h1>
-						<Link href = "https://www.figma.com/design/pgnrs6JiRIQnlnjnMETaSt/Hi-Fi--Lumen-Labs?node-id=193-318&t=Jo5g32x5DVT3Devc-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+						<a href = "https://www.figma.com/design/pgnrs6JiRIQnlnjnMETaSt/Hi-Fi--Lumen-Labs?node-id=193-318&t=Jo5g32x5DVT3Devc-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 							<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
-						</Link>
-						<Link href = "https://lumenlabs-rose.vercel.app/" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+						</a>
+						<a href = "https://lumenlabs-rose.vercel.app/" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 							<Image src = "/website-icon.png" width={30} height={30} alt="Website Indicator Logo" className="inline-block w-6 h-auto"/>Live Website (Preview)
-						</Link>
+						</a>
 					</div>	
 				<SlideShow slidesSources={["/lumen-labs-preview.png", "/lumen-labs-career-center.png", "/lumen-labs-career-center-2.png", "/lumen-labs-community-directory.png", "/lumen-labs-faculty-directory.png"]} />
 			<div className="mb-4 ml-2.5 pb-16">

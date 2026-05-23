@@ -1,7 +1,6 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
 		title: "Better MyStevens", 
@@ -15,12 +14,15 @@ export default function Projects() {
 						<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
 							<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
 								<h1 className="text-2xl text-center p-1 font-bold">Better MyStevens</h1>
-								<Link href = "https://www.figma.com/design/R6eU7a5rBj1AIen1rv8yZU/CS-545-Better-MyStevens-Prototype?node-id=0-1&t=a8kJkwaxML5j24Cs-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+								<a href = "https://www.figma.com/design/R6eU7a5rBj1AIen1rv8yZU/CS-545-Better-MyStevens-Prototype?node-id=0-1&t=a8kJkwaxML5j24Cs-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 									<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
-								</Link>
-								<Link href = "https://github.com/a-eryan/CS545_Project" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-								</Link>
+								</a>
+								<a href = "https://better-mystevens.vercel.app/" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+									<Image src = "/website-icon.png" width={30} height={30} alt="Website Indicator Logo" className="inline-block w-6 h-auto"/>Live Prototype
+								</a>								
+								<a href = "https://github.com/a-eryan/CS545_Project" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
+								</a>
 							</div>    						     
 						{/* <Image src="/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="w-full max-w-4xl object-cover mx-auto"/> */}
 					<video src="/BetterMyStevensBefore-After.mp4" width={3200} height={1800} controls autoPlay muted playsInline className="w-full max-w-7xl aspect-video object-cover  mt-2 m-auto p-2">

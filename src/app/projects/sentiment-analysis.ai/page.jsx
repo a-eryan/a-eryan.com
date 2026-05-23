@@ -1,7 +1,6 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
   title: "sentiment-analysis.ai", //TODO chore: figure out why this isnt working with layout.js title template
@@ -15,12 +14,12 @@ export default function Projects() {
         <TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
         <div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1 ">
           <h1 className="text-2xl text-center flex justify-between font-bold p-1">sentiment-analysis.ai</h1>
-          <Link href = "https://www.figma.com/design/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?node-id=0-1&t=vhPsqcVgbQUPL7FN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+          <a href = "https://www.figma.com/design/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?node-id=0-1&t=vhPsqcVgbQUPL7FN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
             <Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
-          </Link>
-          <Link href = "https://github.com/a-eryan/sentiment-analysis.ai" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-            <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-          </Link>
+          </a>
+          <a href = "https://github.com/a-eryan/sentiment-analysis.ai" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+            <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
+          </a>
         </div>	
       <div className="w-full max-w-4xl mx-auto aspect-32/21">
         <iframe 

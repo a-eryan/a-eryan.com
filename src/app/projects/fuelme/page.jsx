@@ -16,12 +16,12 @@ export default function Projects() {
 				<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
 					<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
 						<h1 className="text-2xl text-center flex justify-between font-bold p-1">FuelMe</h1>
-						<Link href = "https://www.figma.com/design/J9Cw7XPO69sKsJU7dM7rxL/FuelMe?node-id=0-1&t=gonojPCZaCyOg4jN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+						<a href = "https://www.figma.com/design/J9Cw7XPO69sKsJU7dM7rxL/FuelMe?node-id=0-1&t=gonojPCZaCyOg4jN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 							<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
-						</Link>
-						<Link href = "https://github.com/christendeo/EdgeRunners" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-							<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-						</Link>
+						</a>
+						<a href = "https://github.com/christendeo/EdgeRunners" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+							<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
+						</a>
 					</div>	
 				<SlideShow slidesSources={["/fuelme-preview.png", "/fuelme-dashboard.png", "/fuelme-food-logs.png"]} />
 			<div className="mb-4 ml-2.5 pb-16">

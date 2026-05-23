@@ -1,7 +1,6 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata = {
   title: "Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification", 
@@ -16,9 +15,9 @@ export default function Projects() {
         <div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
           <h1 className="text-2xl text-center flex justify-between font-bold p-1">
 Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification</h1>
-          <Link href = "https://github.com/wilkflow/qssProj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
-            <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-          </Link>
+          <a href = "https://github.com/wilkflow/qssProj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+            <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
+          </a>
         </div>	
         <Image src="/gemini-pro-sentiment-study.png" width={3220} height={953} alt="sentiment-analysis.ai project preview screenshot" className="w-full h-full object-cover mx-auto p-2"/>
         <div className="mb-4 ml-2.5 pb-16">

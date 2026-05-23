@@ -16,12 +16,12 @@ export default function Projects() {
 							<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
 							<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
 								<h1 className="text-2xl text-center p-1 font-bold">Duck Study Hub</h1>
-								<Link href = "https://www.figma.com/design/LBbsnbGLlVahpSZpglYhKc/Duck-StudyHub?node-id=0-1&t=1PmttuJqjYhQDRjA-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+								<a href = "https://www.figma.com/design/LBbsnbGLlVahpSZpglYhKc/Duck-StudyHub?node-id=0-1&t=1PmttuJqjYhQDRjA-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 									<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
-								</Link>
-								<Link href = "https://github.com/a-eryan/cs-546-group-proj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+								</a>
+								<a href = "https://github.com/a-eryan/cs-546-group-proj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
 									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
-								</Link>
+								</a>
 							</div> 
 				<SlideShow slidesSources={["/duck-study-hub-preview.png", "/duck-study-hub-2.png", "/duck-study-hub-3.png"]} />
 						<div className="mb-16 ml-2.5 ">
