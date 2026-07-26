@@ -82,16 +82,35 @@ export default function Home() {
       </Link>
       <h2 className="text-xl m-2.5 border-b border-[rgba(0,0,0,0.25)] font-bold">Experience</h2>
       {/*four-column grid where the the first and third columns are auto-width for the icons, and the second and fourth columns take up the remaining space for the text.*/}
-      <div className="ml-2.5 grid grid-cols-[auto_1fr_auto_1fr] gap-x-3 gap-y-2 items-center">
-        {/*four distinct sizes seperated by underscores: auto for the 1st and third column, 1fr for the 2nd and 4th */}
-        <Image src="/stevens-S-logo.svg" width={30} height={30} alt="Stevens Institute of Technology Logo"/>
-        <h3 className="text-lg font-bold">Student Digital Strategist, Stevens Institute of Technology</h3>
-        <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
-        <h3 className="text-lg font-bold">Client Solutions Manager Intern, Meta</h3>
-        <Image src ="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
-        <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - 04/2026</p>
-        <Image src ="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
-        <p>New York, NY | 01/2022 - 07/2022</p>
+      {/* Parent lays experiences out 2-per-row; each child is a self-contained
+          2-column grid, so an odd number of entries never misaligns dates. */}
+      <div className="ml-2.5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+        {/* One experience = icon column (auto) + text column (1fr) */}
+
+        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
+          <Image src="/spendly-logo-8bit.svg" width={30} height={30} alt="Spendly Logo"/>
+          <h3 className="text-lg font-bold">Webflow Development Intern, Spendly</h3>
+          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
+          <p>Remote | 05/2026 - 08/2026</p>
+        </div>
+
+        {/* Empty top-right slot (only exists at 2-col breakpoint, so mobile stacks with no gap)
+            — pushes Stevens to bottom-left and Meta to bottom-right. */}
+        <div className="hidden sm:block" aria-hidden="true" />
+
+        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
+          <Image src="/stevens-S-logo.svg" width={30} height={30} alt="Stevens Institute of Technology Logo"/>
+          <h3 className="text-lg font-bold">Student Digital Strategist, Stevens Institute of Technology</h3>
+          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
+          <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - 04/2026</p>
+        </div>
+
+        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
+          <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
+          <h3 className="text-lg font-bold">Client Solutions Manager Intern, Meta</h3>
+          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
+          <p>New York, NY | 01/2022 - 07/2022</p>
+        </div>
       </div>
       <Link href="/resume" className="ml-2.5 text-md underline underline-offset-2 hover:text-primary">
         View Full Resume
