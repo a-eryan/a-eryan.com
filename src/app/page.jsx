@@ -89,7 +89,7 @@ export default function Home() {
 
         <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
           <Image src="/spendly-logo-8bit.svg" width={30} height={30} alt="Spendly Logo"/>
-          <h3 className="text-lg font-bold">Webflow Development Intern, Spendly</h3>
+          <h3 className="text-lg font-bold">Webflow Developer Intern, Spendly</h3>
           <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
           <p>Remote | 05/2026 - 08/2026</p>
         </div>
