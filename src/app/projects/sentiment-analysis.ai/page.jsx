@@ -1,6 +1,7 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
+import SlideShow from "@/app/ui/SlideShow";
 
 export const metadata = {
   title: "sentiment-analysis.ai", //TODO chore: figure out why this isnt working with layout.js title template
@@ -21,13 +22,8 @@ export default function Projects() {
             <Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
           </a>
         </div>	
-      <div className="w-full max-w-4xl mx-auto aspect-32/21">
-        <iframe 
-          className="w-full h-full p-2" 
-          src="https://embed.figma.com/proto/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?page-id=0%3A1&node-id=66-167&viewport=-840%2C310%2C0.65&scaling=scale-down&content-scaling=fixed&starting-point-node-id=66%3A167&embed-host=share" 
-          allowFullScreen
-        />
-      </div>
+        <SlideShow slidesSources={["/sentiment-analysis.ai-1.png", "/sentiment-analysis.ai-2.png", "/sentiment-analysis.ai-3.png", "/sentiment-analysis.ai-4.png"]} />
+        
         <div className="mb-4 ml-2.5 pb-16 ">
           <h2 className="text-xl mb-2 ">Project Overview</h2>
           <div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">
