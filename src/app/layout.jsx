@@ -21,7 +21,7 @@ export const metadata = {
     template: `%s - Anthony Eryan's Portfolio`,
     default: "Anthony Eryan's Portfolio",
   },
-  description: "Website portfolio of Anthony Eryan, showcasing web development, design projects, and the respective skills used. ",
+  description: "Website portfolio of Anthony Eryan, showcasing product design (UX/UI), web development, and the respective skills used. ",
 };
 
 export default function RootLayout({ children }) {

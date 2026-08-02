@@ -26,7 +26,7 @@ export default function Taskbar({currentPage}) {
   return (
     <>
       <footer className="fixed bottom-0 left-0 right-0 z-50">
-        <div className="truncate min-[457px]:p-2 max-[482px]:gap-0.5 gap-2 flex md:p-1 text-xs md:text-2xl shrink items-center shadow-win95-taskbar bg-background ">
+        <div className="truncate min-[457px]:p-2 max-[482px]:gap-0.5 gap-2 flex md:p-1 taskbar-bar shrink items-center shadow-win95-taskbar bg-background ">
           <button className="p-1.5 md:p-2.5 flex items-center md:gap-2 cursor-pointer active:shadow-win95-active shadow-win95-button" onClick ={() => setTaskbarOpenState(!TaskbarOpenState)}>
             <Image src="/anthony-95.svg" width={12} height={16} alt="Start button logo" className="inline-block w-6 md:w-6.5 h-6 md:h-auto aspect-square object-contain"/>
             <span className="max-[406px]:hidden">Start</span>
@@ -35,7 +35,7 @@ export default function Taskbar({currentPage}) {
             <div className="absolute bottom-full left-0  flex shadow-win95-button bg-background ">
               {/* Vertical sidebar with branding */}
               <div className="bg-primary shadow-win95-button w-10 flex items-end justify-center pb-2">
-                <span className="[writing-mode:vertical-lr] rotate-180 text-xl font-bold text-white tracking-wide ">
+                <span className="[writing-mode:vertical-lr] rotate-180 taskbar-brand font-bold text-white tracking-wide ">
                   Anthony<span className="font-normal">95</span>
                 </span>
               </div>
@@ -44,19 +44,19 @@ export default function Taskbar({currentPage}) {
                 <Link href="/" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/msg_question-1.png' width={32} height={32} alt="About Me page icon" className="w-8 h-8" />
-                    <span className="text-lg ">About Me</span>
+                    <span className="taskbar-menu-label">About Me</span>
                   </button>
                 </Link>
                 <Link href="/projects" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left  flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/shell_window5-1.png' width={32} height={32} alt="Projects page icon" className="w-8 h-8" />
-                    <span className="text-lg">Projects</span>
+                    <span className="taskbar-menu-label">Projects</span>
                   </button>
                 </Link>
                 <Link href="/resume" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/message_file-0.png' width={32} height={32} alt="Resume page icon" className="w-8 h-8" />
-                    <span className="text-lg">Resume</span>
+                    <span className="taskbar-menu-label">Resume</span>
                   </button>
                 </Link>
                 {/* Separator */}
@@ -64,31 +64,31 @@ export default function Taskbar({currentPage}) {
                 <Link href="https://www.linkedin.com/in/anteryan/" target="_blank" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left  flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/linkedinportfolio-icon 1.svg' width={32} height={32} alt="LinkedIn icon" className="w-8 h-8" />
-                    <span className="text-lg">LinkedIn</span>
+                    <span className="taskbar-menu-label">LinkedIn</span>
                   </button>
                 </Link>
                 <Link href="https://github.com/a-eryan" target="_blank" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left  flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/githubportfolio-icon 1.svg' width={32} height={32} alt="GitHub icon" className="w-8 h-8" />
-                    <span className="text-lg">GitHub</span>
+                    <span className="taskbar-menu-label">GitHub</span>
                   </button>
                 </Link>
                 <Link href="mailto:eryananthony@gmail.com" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left  flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/mail-icon.svg' width={32} height={32} alt="Email icon" className="w-8 h-8" />
-                    <span className="text-lg">Email Me</span>
+                    <span className="taskbar-menu-label">Email Me</span>
                   </button>
                 </Link>
                 <Link href = "https://www.figma.com/design/AVf7PzjEp8kfZN1uVkm9oL/a-eryan.com?node-id=0-1&t=DUOKIKwIEYRMhxKf-1" target="_blank" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/figma-logo.svg' width={32} height={32} alt="Figma icon" className="w-8 h-8 object-contain" /> 
-                    <span className="text-lg">Figma Prototype</span>
+                    <span className="taskbar-menu-label">Figma Prototype</span>
                   </button>
                 </Link>
                 <Link href = "https://www.github.com/a-eryan/a-eryan.com" target="_blank" onClick={() => setTaskbarOpenState(false)}>
                   <button className="w-full text-left flex items-center gap-3 cursor-pointer hover:bg-primary active:shadow-win95-active">
                     <Image src='/githubportfolio-icon 1.svg' width={32} height={32} alt="GitHub icon" className="w-8 h-8" /> 
-                    <span className="text-lg">GitHub Repository</span>
+                    <span className="taskbar-menu-label">GitHub Repository</span>
                   </button>
                 </Link> 
               </div>

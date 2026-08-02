@@ -21,14 +21,14 @@ const [isDarkMode, setIsDarkMode] = useState(false);
       <nav className="flex items-center px-1 pt-1 w-full select-none ">
           <div className="bg-primary flex items-center gap-1 pl-0.5 py-1 grow">  
             <Image src={iconSource} width={18} height={18} alt={`${pageName} icon`} className="inline-block w-6.5 h-auto" />
-            <span className="text-xl lg:text-2xl leading-none text-white font-bold">{pageName} - Anthony Eryan</span>
-            <button className="shadow-win95-program text-2xl ml-auto bg-background hover:cursor-pointer active:shadow-win95-active">
+            <span className="window-title leading-none text-white font-bold">{pageName} - Anthony Eryan</span>
+            <button className="shadow-win95-program ml-auto bg-background hover:cursor-pointer active:shadow-win95-active">
               <Image src={isDarkMode ? "/DARK-minimize-button.png" : "/minimize-button.png"} alt="Minimize" width={88} height={88} className="w-8 h-8" />
             </button>
-            <button className="shadow-win95-program text-2xl bg-background hover:cursor-pointer active:shadow-win95-active">
+            <button className="shadow-win95-program bg-background hover:cursor-pointer active:shadow-win95-active">
               <Image src={isDarkMode ? "/DARK-collapse-button.png" : "/collapse-button.png"} alt="Maximize" width={88} height={88} className="w-8 h-8" />
-            </button>                          
-            <button className="shadow-win95-program text-2xl bg-background mr-0.5 hover:cursor-pointer active:shadow-win95-active">
+            </button>
+            <button className="shadow-win95-program bg-background mr-0.5 hover:cursor-pointer active:shadow-win95-active">
               <Image src={isDarkMode ? "/DARK-close-button.png" : "/close-button.png"} alt="Close" width={88} height={88} className="w-8 h-8" />
             </button>          
           </div>       

@@ -12,20 +12,24 @@ export const metadata = {
 export default function Projects() {
 	return (
 		<div className="flex flex-col min-h-screen justify-between "> {/*stack children vertically and make sure the taskbar is always at the bottom*/}
-			<div className="shadow-win95-program flex flex-col grow  ">    
+			<div className="shadow-win95-program flex flex-col grow relative ">
+				<div className="absolute inset-0 -z-10">
+					<Image src="/a-eryan-bg.png" alt="Background" fill className="opacity-75 md:opacity-100 object-cover md:object-fill object-center -z-10 brightness-300  dark:brightness-100" />
+				</div>				    
 				<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
-					<div className="flex flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
-						<h1 className="text-2xl text-center flex justify-between font-bold p-1">FuelMe</h1>
-						<a href = "https://www.figma.com/design/J9Cw7XPO69sKsJU7dM7rxL/FuelMe?node-id=0-1&t=gonojPCZaCyOg4jN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+					<div className="flex flex-col sm:flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
+						<h1 className="text-center flex justify-between font-bold p-1">FuelMe</h1>
+						<a href = "https://www.figma.com/design/J9Cw7XPO69sKsJU7dM7rxL/FuelMe?node-id=0-1&t=gonojPCZaCyOg4jN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary icon-link">
 							<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
 						</a>
-						<a href = "https://github.com/christendeo/EdgeRunners" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary text-2xl">
+						<a href = "https://github.com/christendeo/EdgeRunners" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary icon-link">
 							<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
 						</a>
-					</div>	
-				<SlideShow slidesSources={["/fuelme-preview.png", "/fuelme-dashboard.png", "/fuelme-food-logs.png"]} />
-			<div className="mb-4 ml-2.5 pb-16">
-				<h2 className="text-xl mb-2 ">Project Overview</h2>
+					</div>
+				<div className="flex flex-col xl:flex-row xl:items-start">
+				<SlideShow slidesSources={["/fuelme-preview.png", "/fuelme-dashboard.png", "/fuelme-food-logs.png"]} className="xl:ml-2.5 xl:w-1/2 xl:max-w-none" />
+			<div className="mb-4 ml-2.5 xl:w-1/2">
+				<h2 className="my-2 font-bold ">Project Overview</h2>
 					<div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center " aria-label="Technologies used">
 						<p>Technologies Used: </p>
 						<Image src="/figma-logo.svg" width={20} height={30} alt="Figma Icon" className="inline-block w-4 h-auto"/>
@@ -35,19 +39,22 @@ export default function Projects() {
 						<Image src="/nextjs-logo.svg" width={24} height={24} alt="Next.js Icon" className="inline-block "/>
 						<p>Next.js</p>
 						<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="Tailwind CSS Icon" className="inline-block "/>
-						<p>Tailwind CSS</p>                 
+						<p>Tailwind CSS</p>
 						<Image src="/graph-ql-logo.svg" width={24} height={24} alt="GraphQL Icon" className="inline-block "/>
-						<p>GraphQL</p>                                                               
+						<p>GraphQL</p>
 					</div>
 					<p> Role: UX/UI Designer & Full Stack Developer</p>
-					<p> Timeline: October 2025 - December 2025 </p>            
-					<p className="leading-relaxed"> 
-						FuelMe is a web-based application to help users set and achieve their fitness goals. 
-						FuelMe does this by calculating personalized calorie and macronutrient targets based on user metadata 
-						(height, weight, activity level, fitness goals) and having users log meals to track their daily intake 
-						with their nutrition goals. 
+					<p> Timeline: October 2025 - December 2025 </p>
+					<p className="leading-relaxed mt-2">
+						FuelMe is a web-based application to help users set and achieve their fitness goals.
+						FuelMe does this by calculating personalized calorie and macronutrient targets based on user metadata
+						(height, weight, activity level, fitness goals) and having users log meals to track their daily intake
+						with their nutrition goals.
 					</p>
-					<h2 className="text-xl mt-4 mb-2">Design & Development Process</h2>
+			</div>
+			</div>
+			<div className="mb-4 ml-2.5 pb-16">
+					<h2 className="mt-4 mb-2">Design & Development Process</h2>
 					<p className="leading-relaxed"> 
 						I took the initiative in our group of 5 to design the high fidelity application prototype in Figma before any development began. 
 						I implemented a design system and component specifications before development. 
@@ -63,7 +70,7 @@ export default function Projects() {
 						<li>Frontend: Developed meal logging interface with date range filtering using React and Next.js</li>
 						<li>Styling: Refactored Tailwind CSS across all 5 collections to ensure brand consistency </li>
 					</ul>
-					<h2 className="text-xl mt-4 mb-2">Results & Learning</h2>
+					<h2 className="mt-4 mb-2">Results & Learning</h2>
 					<p>I successfully delivered a full stack meal logging portion of the website while implementing Redis caching for improved query performance on large datasets for the user’s respective food logs. Additionally, the Figma prototype reinforced the concept of a smooth development process by reducing mid-development design changes and aligning team expectations. In retrospect, defining the Tailwind config file with design tokens from day 1 would allow us to avoid major end-of-project Tailwind CSS refactoring, allowing us to focus on critical bugs to polish. </p>
 
 
