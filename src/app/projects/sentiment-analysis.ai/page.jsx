@@ -40,7 +40,7 @@ export default function Projects() {
             <Image src="/tailwind-css-logo.svg" width={24} height={24} alt="Tailwind CSS Icon" className="inline-block"/>
             <p>Tailwind CSS</p>
           </div>
-          <p> Role: UX/UI Designer & Full Stack Developer</p>
+          <p> Role: Product Designer & Full Stack Developer</p>
           <p> Timeline: August 2025 - December 2025 </p>
           <p className="leading-relaxed">
             sentiment-analysis.ai is an actively developing AI SaaS project that enables users to leverage large language models (LLMs) to perform sentiment analysis on predefined sentiment classification presets from a spreadsheet column.

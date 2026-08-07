@@ -41,7 +41,7 @@ export default function Projects() {
 												<Image src="/javascript-logo.svg" width={24} height={24} alt="JavaScript Icon" className="inline-block "/>
 												<p>JavaScript</p>
 										</div>
-										<p> Role: UX/UI Designer & Full Stack Developer </p>
+										<p> Role: Product Designer & Full Stack Developer </p>
 										<p> Timeline: April 2025 - May 2025 </p>
 										<p className="leading-relaxed mt-2"> Campus-based social networking application where students rate and review study spots, discuss in forums, and filter locations by noise level and available resources.</p>
 						</div>

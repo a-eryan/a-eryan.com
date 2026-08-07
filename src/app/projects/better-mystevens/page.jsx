@@ -43,7 +43,7 @@ export default function Projects() {
 											<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="CSS Icon" className="inline-block w-6 h-auto "/>
 											<p>Tailwind CSS</p>
 										</div>
-										<p> Role: UX/UI Designer & Full-Stack Developer </p>
+										<p> Role: Product Designer & Full-Stack Developer </p>
 										<p> Timeline: February 2025 - May 2025</p>
 										<p className="leading-relaxed mt-2"> Student-researched redesigned student portal focused on improving user efficiency from the current student portal, Workday. This was a semester-long project for Human Computer Interaction (CS 545), which included low, medium and our last iteration, the high fidelity prototype that included student-backed data via Jakob Nielsen's Heuristic Evaluation list to measure efficiency, brand authenticity, and prototype functionality.</p>
 						</div>
