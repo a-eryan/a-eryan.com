@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import TitleBar from "./ui/TitleBar";
 import Taskbar from "./ui/Taskbar";
+import ExpandableImage from "./ui/ExpandableImage";
 
 export const metadata = {
   title: "About Me - Anthony Eryan's Portfolio", 
@@ -86,35 +87,76 @@ export default function Home() {
       {/*four-column grid where the the first and third columns are auto-width for the icons, and the second and fourth columns take up the remaining space for the text.*/}
       {/* Parent lays experiences out 2-per-row; each child is a self-contained
           2-column grid, so an odd number of entries never misaligns dates. */}
-      <div className="ml-2.5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+      <div className="m-2.5 grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-4">
         {/* One experience = icon column (auto) + text column (1fr) */}
 
-        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
-          <Image src="/spendly-logo-8bit.svg" width={30} height={30} alt="Spendly Logo"/>
-          <h3 className="font-bold">Webflow Developer Intern, Spendly</h3>
-          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
-          <p>Remote | 05/2026 - 08/2026</p>
+        <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2 mb-auto">
+            <div className="flex items-center gap-3 ">
+              <Image src="/spendly-logo-8bit.svg" width={30} height={30} alt="Spendly Logo"/>
+              <h3 className="font-bold ">Design & Web Development Intern</h3>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
+              <p>Remote | 05/2026 - 08/2026</p>
+            </div>
+          </div>
+          <div className="col-span-2 grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3">
+            <ExpandableImage src="/Spendly-Enterprise-One-Pager.png" title="Spendly Enterprise One-Pager" width={1275} height={1650} alt="Spendly Enterprise One-Pager" className="h-[clamp(100.37px,-25.09px+39.21vw,225.45px)]! sm:h-30!" />
+            <div className="flex justify-self-end">
+              <ExpandableImage src="/Spendly-Website-Redesign.png" title="Spendly Website Redesign" width={1920} height={1080} alt="Spendly Website Redesign" className="h-[clamp(100.37px,-25.09px+39.21vw,225.45px)]! sm:h-30!"/>
+            </div>
+            <div className="col-span-2 flex">
+              <ExpandableImage src="/Spendly-Profile-Winner.png" title="Spendly LinkedIn Banner" width={1584} height={396} alt="Spendly LinkedIn Banner" className="h-[clamp(73px,-7px+25vw,152.75px)]! sm:h-30!"/>
+            </div>
+          </div>
         </div>
 
         {/* Empty top-right slot (only exists at 2-col breakpoint, so mobile stacks with no gap)
             — pushes Stevens to bottom-left and Meta to bottom-right. */}
         <div className="hidden sm:block" aria-hidden="true" />
 
-        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
-          <Image src="/stevens-S-logo.svg" width={30} height={30} alt="Stevens Institute of Technology Logo"/>
-          <h3 className="font-bold">Student Digital Strategist, Stevens Institute of Technology</h3>
-          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon" />
-          <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - 04/2026</p>
+        <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center ">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2">
+            <div className="flex items-center gap-3 ">
+              <Image src="/stevens-S-logo.svg" width={30} height={30} alt="Stevens Institute of Technology Logo"/>
+              <h3 className="font-bold">Student Digital Strategist, Stevens Institute of Technology</h3>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
+              <p>Hoboken, NJ | 09/2024 - 05/2025, 09/2025 - 04/2026</p>
+            </div>
+          </div>
+            <div className="col-span-2 flex flex-col sm:flex-row items-center gap-3">
+              <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">
+                <ExpandableImage src="/HASS2030.png" title="HASS 2030 Profile Picture Frame Generator" width={3220} height={2100} alt="HASS 2030 Profile Picture Frame Generator" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
+                <div className="flex justify-self-end">
+                  <ExpandableImage src="/Studios-NJ.png" title="HASS Instagram Post Graphic" width={1275} height={1650} alt="HASS Instagram Post Graphic" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
+                </div>
+              </div>
+              <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">
+                <ExpandableImage src="/HASS-Smart-Tv-Slide.png" title="HASS Smart TV Slide" width={1920} height={1080} alt="HASS Smart TV Slide" className="h-[clamp(109.39px,-27.35px+42.73vw,245.70px)]! sm:h-30!"/>
+                <div className="flex justify-self-end">
+                  <ExpandableImage src="/HASS-Instagram-Story.png" title="HASS Instagram Story Graphic" width={1080} height={1920} alt="HASS Instagram Story Graphic" className="h-[clamp(109.39px,-27.35px+42.73vw,245.70px)]! sm:h-30!"/>
+                </div>
+              </div>
+            </div>
         </div>
 
-        <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
-          <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
-          <h3 className="font-bold">Client Solutions Manager Intern, Meta</h3>
-          <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
-          <p>New York, NY | 01/2022 - 07/2022</p>
+        <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-start ">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2">
+            <div className="flex items-center gap-3">
+              <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
+              <h3 className="font-bold">Client Solutions Manager Intern, Meta</h3>
+            </div>
+            <div className="flex items-center gap-3">
+              <Image src="/map-flat-icon.svg" width={30} height={30} alt="Location Icon"/>
+              <p>New York, NY | 01/2022 - 07/2022</p>
+            </div>
+          </div>
         </div>
       </div>
-      <Link href="/resume" className="ml-2.5 underline underline-offset-2 hover:text-primary">
+      <Link href="/resume" className="ml-2.5 mb-2.5 underline underline-offset-2 hover:text-primary">
         View Full Resume
       </Link>           
     </div>
