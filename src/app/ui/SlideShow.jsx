@@ -16,13 +16,13 @@ export default function SlideShow({ slidesSources, className = "" }) {
 					*/}
         <button
           onClick={() => setCurrentIndex((currentIndex - 1 + slidesSources.length) % slidesSources.length)}
-          className={`absolute top-1/2 left-0 transform -translate-y-1/2 p-2 shadow-win95-button active:shadow-win95-active`}
+          className={`bg-background absolute top-1/2 left-0 transform -translate-y-1/2 p-2 shadow-win95-button active:shadow-win95-active`}
         >
           &#10094;
         </button>
         <button
           onClick={() => setCurrentIndex((currentIndex + 1) % slidesSources.length)}
-          className={`absolute top-1/2 right-0 transform -translate-y-1/2 p-2 shadow-win95-button active:shadow-win95-active`}
+          className={`bg-background absolute top-1/2 right-0 transform -translate-y-1/2 p-2 shadow-win95-button active:shadow-win95-active`}
         >
           &#10095;
         </button>

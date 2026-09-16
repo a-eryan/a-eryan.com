@@ -131,7 +131,7 @@ export default function Home() {
               <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">
                 <ExpandableImage src="/HASS2030.png" title="HASS 2030 Profile Picture Frame Generator" width={3220} height={2100} alt="HASS 2030 Profile Picture Frame Generator" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
                 <div className="flex justify-self-end">
-                  <ExpandableImage src="/Studios-NJ.png" title="HASS Instagram Post Graphic" width={1275} height={1650} alt="HASS Instagram Post Graphic" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
+                  <ExpandableImage src="/Studios-NJ.png" title="Films Studios Graphic" width={1275} height={1650} alt="Films Studios Graphic" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
                 </div>
               </div>
               <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">
