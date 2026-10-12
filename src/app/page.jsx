@@ -3,6 +3,7 @@ import Link from "next/link";
 import TitleBar from "./ui/TitleBar";
 import Taskbar from "./ui/Taskbar";
 import ExpandableImage from "./ui/ExpandableImage";
+import BackgroundImage from "./ui/BackgroundImage";
 
 export const metadata = {
   title: "About Me - Anthony Eryan's Portfolio", 
@@ -15,7 +16,7 @@ export default function Home() {
       <div className="flex flex-col h-screen justify-between">
         
         <div className="shadow-win95-program relative flex flex-col grow pb-16">
-          <Image src="/a-eryan-bg.png" alt="Background" fill className="opacity-75 md:opacity-100 object-cover md:object-fill object-center -z-10 brightness-300  dark:brightness-100" />
+          <BackgroundImage />
           <TitleBar pageName="About Me" iconSource="/msg_question-1.png" />
           <div className="m-2.5 gap-6 ">
             <Image 
@@ -26,7 +27,7 @@ export default function Home() {
               className="bg-background float-none lg:float-left mx-auto lg:mx-0 lg:mr-6 w-36 lg:w-48 h-auto border-6 border-primary mb-4 lg:mb-0 mt-2.5 lg:mt-0"
             />
             <div className="flex flex-col justify-center">
-              <div className="border-b mx-2 lg:mx-0 border-[rgba(0,0,0,0.25)]  flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4">
+              <div className="border-b mx-2 lg:mx-0 border-foreground/25  flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4">
                 <h1 className="font-bold text-center lg:text-left shrink-0">Hi, I'm Anthony!</h1>
                 
                 <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center lg:justify-start items-center mb-0.5 ">
@@ -56,7 +57,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-    <h2 className="ml-2.5 border-b border-[rgba(0,0,0,0.25)] font-bold"> Featured Projects </h2>
+    <h2 className="ml-2.5 border-b border-foreground/25 font-bold"> Featured Projects </h2>
       <div className="m-2.5 flex items-stretch flex-wrap md:flex-nowrap md:flex-row gap-4 w-auto h-full max-w-2200 mt-4">
         <Link href="/projects/better-mystevens" className="featured-project-card">
           <Image src = "/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary h-auto"/>
@@ -83,7 +84,7 @@ export default function Home() {
       <Link href="/projects" className="ml-2.5 underline underline-offset-2 hover:text-primary">
         View All Projects
       </Link>
-      <h2 className="m-2.5 border-b border-[rgba(0,0,0,0.25)] font-bold">Experience</h2>
+      <h2 className="m-2.5 border-b border-foreground/25 font-bold">Experience</h2>
       {/*four-column grid where the the first and third columns are auto-width for the icons, and the second and fourth columns take up the remaining space for the text.*/}
       {/* Parent lays experiences out 2-per-row; each child is a self-contained
           2-column grid, so an odd number of entries never misaligns dates. */}
@@ -91,7 +92,7 @@ export default function Home() {
         {/* One experience = icon column (auto) + text column (1fr) */}
 
         <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center">
-          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2 mb-auto">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-foreground/25 pb-2 mb-auto">
             <div className="flex items-center gap-3 ">
               <Image src="/spendly-logo-8bit.svg" width={30} height={30} alt="Spendly Logo"/>
               <h3 className="font-bold ">Design & Web Development Intern</h3>
@@ -117,7 +118,7 @@ export default function Home() {
         <div className="hidden sm:block" aria-hidden="true" />
 
         <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-center ">
-          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-foreground/25 pb-2">
             <div className="flex items-center gap-3 ">
               <Image src="/stevens-S-logo.svg" width={30} height={30} alt="Stevens Institute of Technology Logo"/>
               <h3 className="font-bold">Student Digital Strategist, Stevens Institute of Technology</h3>
@@ -144,7 +145,7 @@ export default function Home() {
         </div>
 
         <div className="bg-background shadow-win95-button p-4 grid grid-cols-[auto_1fr] gap-x-3 gap-y-2 items-start ">
-          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-[rgba(0,0,0,0.25)] pb-2">
+          <div className="col-span-2 flex flex-wrap justify-between items-center gap-3 border-b border-foreground/25 pb-2">
             <div className="flex items-center gap-3">
               <Image src="/meta-logo.svg" width={30} height={20} alt="Meta Logo"/>
               <h3 className="font-bold">Client Solutions Manager Intern, Meta</h3>

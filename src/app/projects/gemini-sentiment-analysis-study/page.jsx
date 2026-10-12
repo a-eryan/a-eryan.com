@@ -1,6 +1,7 @@
 import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
+import BackgroundImage from "../../ui/BackgroundImage";
 
 export const metadata = {
   title: "Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification", 
@@ -11,11 +12,9 @@ export default function Projects() {
   return (
     <div className="flex flex-col min-h-screen justify-between "> {/*stack children vertically and make sure the taskbar is always at the bottom*/}
       <div className="shadow-win95-program flex flex-col grow relative ">
-        <div className="absolute inset-0 -z-10">
-          <Image src="/a-eryan-bg.png" alt="Background" fill className="opacity-75 md:opacity-100 object-cover md:object-fill object-center -z-10 brightness-300  dark:brightness-100" />
-        </div>		  
+        <BackgroundImage />
         <TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
-        <div className="flex flex-col sm:flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1">
+        <div className="flex flex-col sm:flex-row gap-2 items-center mx-2.5 border-b border-foreground/25 p-1">
           <h1 className="flex justify-between font-bold p-1">
 Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification</h1>
           <a href = "https://github.com/wilkflow/qssProj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary icon-link">

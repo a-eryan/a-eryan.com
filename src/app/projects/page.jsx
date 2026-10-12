@@ -1,6 +1,7 @@
 import TitleBar from "../ui/TitleBar";
 import Taskbar from "../ui/Taskbar";
 import Image from "next/image";
+import BackgroundImage from "../ui/BackgroundImage";
 import Link from "next/link";
 
 export const metadata = {
@@ -11,12 +12,10 @@ export default function Projects() {
   
     return (
     <div className="relative flex min-h-screen flex-col justify-between overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <Image src="/a-eryan-bg.png" alt="Background" fill className="opacity-75 md:opacity-100 object-cover md:object-fill object-center -z-10 brightness-300  dark:brightness-100" />
-        </div>	
+      <BackgroundImage />
       <div className="shadow-win95-program flex flex-col grow">
         <TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
-        <div className="mx-2.5 border-b border-[rgba(0,0,0,0.25)] flex justify-between  p-1">
+        <div className="mx-2.5 border-b border-foreground/25/25 flex justify-between  p-1">
           <h1 className="font-bold">Projects</h1>
           {/* <select className="shadow-win95-button p-1 bg-background">
             <option>Sort by: Newest</option>

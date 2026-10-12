@@ -2,6 +2,7 @@ import TitleBar from "../../ui/TitleBar";
 import Taskbar from "../../ui/Taskbar";
 import Image from "next/image";
 import SlideShow from "@/app/ui/SlideShow";
+import BackgroundImage from "../../ui/BackgroundImage";
 
 export const metadata = {
   title: "sentiment-analysis.ai", //TODO chore: figure out why this isnt working with layout.js title template
@@ -12,11 +13,9 @@ export default function Projects() {
   return (
     <div className="flex flex-col min-h-screen justify-between "> {/*stack children vertically and make sure the taskbar is always at the bottom*/}
       <div className="shadow-win95-program flex flex-col grow relative ">
-        <div className="absolute inset-0 -z-10">
-          <Image src="/a-eryan-bg.png" alt="Background" fill className="opacity-75 md:opacity-100 object-cover md:object-fill object-center -z-10 brightness-300  dark:brightness-100" />
-        </div>		           
+        <BackgroundImage />
         <TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
-        <div className="flex flex-col sm:flex-row gap-2 items-center mx-2.5 border-b border-[rgba(0,0,0,0.25)] p-1 ">
+        <div className="flex flex-col sm:flex-row gap-2 items-center mx-2.5 border-b border-foreground/25 p-1 ">
           <h1 className="text-center flex justify-between font-bold p-1">sentiment-analysis.ai</h1>
           <a href = "https://www.figma.com/design/Pu2odMm0iRw3SotxzN4Suw/sentiment-analysis.ai?node-id=0-1&t=vhPsqcVgbQUPL7FN-1" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary icon-link">
             <Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
