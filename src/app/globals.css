@@ -81,6 +81,7 @@ h3 {
 
 p, li {
   font-size: 1.05rem; /* original text-base/unstyled */
+  text-wrap: pretty;
 }
 
 @media (min-width: 1024px) {
@@ -95,6 +96,12 @@ p, li {
   }
   p, li {
     font-size: 1.125rem;
+  }
+
+  /* Case-study pages (src/app/projects/<slug>) are long-form reading, so body copy gets a bump over the global scale. 19px = midpoint of 18px and 20px, kept on a whole pixel for the pixel font. Headings stay on the global scale. */
+  .case-study p,
+  .case-study li {
+    font-size: 1.1875rem;
   }
 }
 

@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function Projects() {
 	return (
-		<div className="flex flex-col min-h-screen justify-between "> {/*stack children vertically and make sure the taskbar is always at the bottom*/}
+		<div className="case-study flex flex-col min-h-screen justify-between "> {/*stack children vertically and make sure the taskbar is always at the bottom*/}
 			<div className="shadow-win95-program flex flex-col grow relative ">
 				<BackgroundImage />
 				<TitleBar pageName="Projects" iconSource="/shell_window5-1.png" />
