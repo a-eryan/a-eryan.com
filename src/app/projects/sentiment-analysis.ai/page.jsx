@@ -40,7 +40,7 @@ export default function Projects() {
             <p>Tailwind CSS</p>
           </div>
           <p> Role: Product Designer & Full Stack Developer</p>
-          <p> Timeline: August 2025 - December 2025 </p>
+          <p> Timeline: August 2025 - April 2026 </p>
           <p className="leading-relaxed">
             sentiment-analysis.ai is an actively developing AI SaaS project that enables users to leverage large language models (LLMs) to perform sentiment analysis on predefined sentiment classification presets from a spreadsheet column.
           </p>
