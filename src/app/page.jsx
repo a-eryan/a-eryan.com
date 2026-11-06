@@ -65,7 +65,7 @@ export default function Home() {
           <p className="leading-relaxed text-center"> A student-researched redesigned student portal focused on improving navigation and user efficiency. </p>
         </Link>
         <Link href="/projects/sentiment-analysis.ai" className="featured-project-card">
-          <Image src = "/sentiment-analysis.ai-1.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
+          <Image src = "/sentiment-analysis.ai-home-p1-front.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
           <h3 className="text-center underline font-bold hover:text-primary "> sentiment-analysis.ai</h3>
           <p className="leading-relaxed text-center">AI-centric SaaS high fidelity prototype. </p>
         </Link>
