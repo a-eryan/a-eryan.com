@@ -30,6 +30,17 @@ export default function Projects() {
           XL: w-[calc(20%-0.8rem)] - 5 cards per row (original layout)        
         */} 
         <div className="flex flex-wrap gap-4 m-2.5 pb-16 ">
+          <Link href="/projects/spendly" className="project-card">
+            <Image src="/getspendly-1.png" width={3200} height={2100} alt="Spendly Website Redesign project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
+            <h3 className="text-center underline hover:text-primary">Spendly Website Redesign</h3>
+            <div className="flex flex-row justify-center flex-wrap gap-1 items-center" aria-label="Technologies used">
+              <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Icon" className="inline-block w-4 h-auto"/>
+              <p className="text-center">Figma</p>
+              <Image src="/webflow-logo.svg" width={24} height={24} alt="Webflow Icon" className="inline-block w-6 h-auto "/>
+              <p className="text-center">Webflow</p>
+            </div>
+            <p className="leading-relaxed text-center">Summer internship project about redesigning a B2B startup's website.</p>
+          </Link>
           <Link href="/projects/lumen-labs" className="project-card">
             <Image src="/lumen-labs-preview.png" width={3200} height={2100} alt="Lumen Labs project preview screenshot" className="w-full  border-4 border-primary object-cover"/>
             <h3 className="text-center underline hover:text-primary">Lumen Labs</h3>

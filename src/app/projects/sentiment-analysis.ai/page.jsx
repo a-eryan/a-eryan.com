@@ -25,7 +25,7 @@ export default function Projects() {
           </a>
         </div>
         <div className="flex flex-col xl:flex-row xl:items-start">
-        <SlideShow slidesSources={["/sentiment-analysis.ai-home-p1-front.png", "/sentiment-analysis.ai-home-p2-front.png", "/sentiment-analysis.ai-create-p1-front.png", "/sentiment-analysis.ai-create-p2-front.png", "/sentiment-analysis.ai-results-front.png"]} className="xl:ml-2.5 xl:w-1/2 xl:max-w-none" />
+        <SlideShow slidesSources={["/sentiment-analysis.ai-1.png", "/sentiment-analysis.ai-2.png", "/sentiment-analysis.ai-3.png", "/sentiment-analysis.ai-4.png", "/sentiment-analysis.ai-5.png"]} className="xl:ml-2.5 xl:w-1/2 xl:max-w-none" />
         <div className="mb-4 ml-2.5 xl:w-1/2">
           <h2 className="my-2 font-bold">Project Overview</h2>
           <div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">

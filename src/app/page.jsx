@@ -59,26 +59,29 @@ export default function Home() {
           </div>
     <h2 className="ml-2.5 border-b border-foreground/25 font-bold"> Featured Projects </h2>
       <div className="m-2.5 flex items-stretch flex-wrap md:flex-nowrap md:flex-row gap-4 w-auto h-full max-w-2200 mt-4">
+       
         <Link href="/projects/better-mystevens" className="featured-project-card">
           <Image src = "/better-mystevens-preview.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary h-auto"/>
           <h3 className="text-center underline font-bold hover:text-primary "> Better MyStevens</h3>
           <p className="leading-relaxed text-center"> A student-researched redesigned student portal focused on improving navigation and user efficiency. </p>
         </Link>
         <Link href="/projects/sentiment-analysis.ai" className="featured-project-card">
-          <Image src = "/sentiment-analysis.ai-home-p1-front.png" width={3200} height={2100} alt="Better MyStevens project preview screenshot" className="inline-block border-4 border-primary "/>
+          <Image src = "/sentiment-analysis.ai-1.png" width={3200} height={2100} alt="sentiment-analysis.ai project preview screenshot" className="inline-block border-4 border-primary "/>
           <h3 className="text-center underline font-bold hover:text-primary "> sentiment-analysis.ai</h3>
           <p className="leading-relaxed text-center">End-to-end AI-centric SaaS for sentiment analysis.</p>
         </Link>
+        <Link href="/projects/spendly" className="featured-project-card">
+          <Image src = "/getspendly-1.png" width={3200} height={2100} alt="Spendly Website Redesign preview screenshot" className="inline-block border-4 border-primary"/>
+          <h3 className="text-center underline font-bold hover:text-primary "> Spendly Website Redesign </h3>
+          <p className="leading-relaxed text-center">Summer internship project about redesigning a B2B startup's website.</p>
+        </Link>
         <Link href="/projects/lumen-labs" className="featured-project-card">
-          <Image src = "/lumen-labs-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
+          <Image src = "/lumen-labs-preview.png" width={3200} height={2100} alt="Lumen Labs preview screenshot" className="inline-block border-4 border-primary"/>
           <h3 className="text-center underline font-bold hover:text-primary  "> Lumen Labs </h3>
           <p className="leading-relaxed text-center"> AI for democratizing career prospects and research opportunities for graduate students. </p>
-        </Link>           
-        <Link href="/projects/duck-study-hub" className="featured-project-card">
-          <Image src = "/duck-study-hub-preview.png" width={3200} height={2100} alt="Project 2 Screenshot" className="inline-block border-4 border-primary"/>
-          <h3 className="text-center underline font-bold hover:text-primary "> Duck Study Hub </h3>
-          <p className="leading-relaxed text-center">On-campus social networking app connecting students through  study groups and locations. </p>
-        </Link>
+        </Link>       
+
+
                          
       </div>
       <Link href="/projects" className="ml-2.5 underline underline-offset-2 hover:text-primary">
