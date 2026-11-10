@@ -5,7 +5,7 @@ import BackgroundImage from "../../ui/BackgroundImage";
 
 export const metadata = {
   title: "Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification", 
-  description: "15-paged paper on the evaluation of Google's Gemini Pro model for sentiment classification tasks via statistical programming in R.",
+  description: "15-page paper on the evaluation of Google's Gemini Pro model for sentiment classification tasks via statistical programming in R.",
 };
 
 export default function Projects() {
@@ -22,18 +22,18 @@ Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Se
           </a>
         </div>
         <div className="flex flex-col xl:flex-row xl:items-start">
-        <Image src="/gemini-pro-sentiment-study.png" width={3220} height={953} alt="sentiment-analysis.ai project preview screenshot" className="w-full h-full xl:w-1/2 object-cover mx-auto p-2"/>
+        <Image src="/gemini-pro-sentiment-study.png" width={3220} height={953} alt="Data visualizations comparing sentiment classification results between Google Gemini and human crowdworkers." className="w-full h-full xl:w-1/2 object-cover mx-auto p-2"/>
         <div className="mb-4 ml-2.5 xl:w-1/2">
           <h2 className="my-2 font-bold">Project Overview</h2>
           <div className="flex flex-row justify-start flex-wrap gap-2 text-center items-center" aria-label="Technologies used">
             <p>Technologies Used: </p>
             <Image src="/r-logo.svg" width={24} height={24} alt="R Icon" className="inline-block"/>
-            <p>R Programing Language</p>
+            <p>R programming Language</p>
           </div>
           <p> Role: Technical Writer & Statistical Programmer </p>
           <p> Timeline: March 2024 - May 2024  </p>
           <p className="leading-relaxed mt-2">
-            15-paged paper on the evaluation of Google's Gemini Pro model for sentiment classification tasks via statistical programming in R.
+            15-page paper on the evaluation of Google's Gemini Pro model for sentiment classification tasks via statistical programming in R.
           </p>
         </div>
         </div>

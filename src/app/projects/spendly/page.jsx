@@ -49,7 +49,7 @@ export default function Projects() {
         <div className="mb-4 ml-2.5 pb-16 ">
           <h2 className="mt-4 mb-2">Design & Development Process</h2>
           <p className="leading-relaxed"> 
-             The first step of the Spendly redesign project was understanding what the company's pain points were for their website on Webflow. The company claimed that the templated site felt too generic and that stock images were used to compensate for the lack of strong visuals, which were aligned to my initial impression. While continually learning about Spendly throughout several meetings for syncs across this project and other ones, I conducted a competitive analysis of successful financial technology (fintech) websites to identify what exactly a Spendly website could look like, to which the inspiration of the following sites influenced the final design:
+             The first step of the Spendly redesign project was understanding what the company's pain points were for their website on Webflow. The company claimed that the templated site felt too generic and that stock images were used to compensate for the lack of strong visuals, which were aligned to my initial impression. While continually learning about Spendly throughout several meetings for syncs across this project and other ones, I conducted a competitive analysis of successful financial technology (fintech) websites to identify what exactly a Spendly website could look like, to which the following sites inspired the final design:
           </p>
           <ul className="list-disc list-inside leading-relaxed">
             <li>Stripe's use of a dedicated statistics section with a stronger sense of visuals to reinforce the value proposition, as well as a stronger use of branding colors to emphasize certain sections such as the landing page. </li>
@@ -63,7 +63,7 @@ export default function Projects() {
           <h2 className="mt-4 mb-2">Results & Learning</h2>
           <p className="leading-relaxed">
             It was a great privilege to be the sole designer and developer of a redesign project for a startup with 300+ monthly unique visitors. Despite all the pivots that were made internally and at times feeling like no initial progress was being made, I persevered due to my professionalism and commitment to the company and the project, no matter how many initial designs or directions were initially scrapped in the process. 
-            On the technical side, I learned how to create more complex UX illustrations and utilized an AI workflow that didn't replace my interdisciplinary design and development skills, but rather amplified it with SEO audits and performance fixes (particularly with SVG files that were too large due to a rasterized export from Figma) that led to a high 90s PageSpeed Insights score for the website on both desktop and mobile.
+            On the technical side, I learned how to create more complex UX illustrations and utilized an AI workflow that didn't replace my interdisciplinary design and development skills, but rather amplified them with SEO audits and performance fixes (particularly with SVG files that were too large due to a rasterized export from Figma) that led to a high 90s PageSpeed Insights score for the website on both desktop and mobile.
           </p>
         </div>
       </div>

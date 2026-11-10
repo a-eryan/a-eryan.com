@@ -87,7 +87,7 @@ export default function Projects() {
               <Image src="/tailwind-css-logo.svg" width={24} height={14} alt="Tailwind CSS Icon" className="inline-block w-6 h-auto "/>
               <p className="text-center">Tailwind CSS</p>                          
             </div>            
-            <p className="leading-relaxed text-center">AI-centric SaaS high fidelity prototype.</p>
+            <p className="leading-relaxed text-center">AI-centric SaaS high-fidelity prototype.</p>
           </Link>
           
           <Link href="/projects/better-mystevens" className="project-card">
@@ -138,7 +138,7 @@ export default function Projects() {
             <h3 className="text-center underline hover:text-primary">Democratizing Text Analysis? A Critical Evaluation of Google's Gemini Pro for Sentiment Classification</h3>
             <div className="flex flex-row justify-center flex-wrap gap-1" aria-label="Technologies used">
               <Image src="/R-logo.svg" width={24} height={24} alt="R Icon" className="inline-block w-6 h-auto"/>
-              <p className="text-center">R Programming language</p>                                                                            
+              <p className="text-center">R programming language</p>                                                                            
             </div>     
             <p className="leading-relaxed text-center">Statistical analysis comparing the sentiment classification accuracy of Google Gemini Pro against crowdworkers with over 1000 tweets.</p>
           </Link>

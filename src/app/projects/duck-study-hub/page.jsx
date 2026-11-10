@@ -23,7 +23,7 @@ export default function Projects() {
 									<Image src = "/figma-logo.svg" width={20} height={30} alt="Figma Logo" className="inline-block w-4 h-auto"/>Figma Prototype
 								</a>
 								<a href = "https://github.com/a-eryan/cs-546-group-proj" target="_blank" className="inline-block underline underline-offset-2 hover:text-primary icon-link">
-									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="Github Logo" className="inline-block w-6 h-auto"/>Github Repository
+									<Image src = "/githubportfolio-icon 1.svg" width={30} height={30} alt="GitHub Logo" className="inline-block w-6 h-auto"/>GitHub Repository
 								</a>
 							</div>
 				<div className="flex flex-col xl:flex-row xl:items-start">
@@ -60,8 +60,8 @@ export default function Projects() {
 										</ul>
 										<h2 className="mt-4 mb-2">Results & Learning</h2>
 										<p className="leading-relaxed">
-											I learned from experience how useful it was to get the ball rolling with Figma, even if it was a single landing page, as well as create initial HTML elements with their respective rules. As a group of four, we met the overwhelming majority of our expectations in our codebase by preventing XSS attacks, with comprehensive input invalidation, while having the time to incorporate the full stack implementation of profile pictures as our extra credit proposal. 
-											Moving forward, post-launch testing could assess whether our grid-approach of the study spots landing pages provides an eloquent user experience and how students on our campus feel about using our product throughout their user journey. 
+											I learned from experience how useful it was to get the ball rolling with Figma, even if it was a single landing page, as well as create initial HTML elements with their respective rules. As a group of four, we met the overwhelming majority of our expectations in our codebase by preventing XSS attacks, with comprehensive input validation, while having the time to incorporate the full stack implementation of profile pictures as our extra credit proposal. 
+											Moving forward, post-launch testing could assess whether our grid-approach of the study spots landing pages provides an elegant user experience and how students on our campus feel about using our product throughout their user journey. 
 										</p>
 						</div>
 				</div>

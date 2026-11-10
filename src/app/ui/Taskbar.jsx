@@ -3,7 +3,7 @@ import Image from 'next/image'; //not statically imported -- while standard Java
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-/*inherit's universal body tailwind utility classes from layout.js, so always put this component at the bottom, since
+/*inherits universal body tailwind utility classes from layout.js, so always put this component at the bottom, since
 it's the last child:
 ┌─────────────────────┐
 │ <TitleBar/>         │ ← Top (consistent header)
@@ -132,7 +132,7 @@ export default function Taskbar({currentPage}) {
               <Image src="/figma-logo.svg" width={20} height={30} alt="Figma Logo Icon" className=" object-contain" />
             </Link>
             <Link href="https://www.github.com/a-eryan/a-eryan.com" title="Portfolio GitHub Repository" target="_blank" className="hover:cursor-pointer active:shadow-win95-active justify-center w-5 md:w-6.5 h-auto">
-              <Image src="/githubportfolio-icon 1.svg" width={32} height={32} alt="Github Logo Icon" className="object-contain" />
+              <Image src="/githubportfolio-icon 1.svg" width={32} height={32} alt="GitHub Logo Icon" className="object-contain" />
             </Link>
             <span>{time}</span>
           </div>

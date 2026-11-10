@@ -55,7 +55,7 @@ export default function Projects() {
 			<div className="mb-4 ml-2.5 pb-16">
 					<h2 className="mt-4 mb-2">Design & Development Process</h2>
 					<p className="leading-relaxed"> 
-						I took the initiative in our group of 5 to design the high fidelity application prototype in Figma before any development began. 
+						I took the initiative in our group of 5 to design the high-fidelity application prototype in Figma before any development began. 
 						I implemented a design system and component specifications before development. 
 					</p>
 					<p className="leading-relaxed">   I demonstrated how UI components should look from a design standpoint and how each UI component should function. Additionally, I designed the logo to be the fork and knife in between the speedometer, representing the playfulness of "tracking what you eat", effectively communicating the app's ethos. The typography for the logo and the headers is “Nimbu” – a playful font designed for the food business, while still being professional enough for branding. 

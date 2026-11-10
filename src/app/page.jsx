@@ -88,7 +88,7 @@ export default function Home() {
         View All Projects
       </Link>
       <h2 className="m-2.5 border-b border-foreground/25 font-bold">Experience</h2>
-      {/*four-column grid where the the first and third columns are auto-width for the icons, and the second and fourth columns take up the remaining space for the text.*/}
+      {/*four-column grid where the first and third columns are auto-width for the icons, and the second and fourth columns take up the remaining space for the text.*/}
       {/* Parent lays experiences out 2-per-row; each child is a self-contained
           2-column grid, so an odd number of entries never misaligns dates. */}
       <div className="m-2.5 grid grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-4">
@@ -135,7 +135,7 @@ export default function Home() {
               <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">
                 <ExpandableImage src="/HASS2030.png" title="HASS 2030 Profile Picture Frame Generator" width={3220} height={2100} alt="HASS 2030 Profile Picture Frame Generator" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
                 <div className="flex justify-self-end">
-                  <ExpandableImage src="/Studios-NJ.png" title="Films Studios Graphic" width={1275} height={1650} alt="Films Studios Graphic" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
+                  <ExpandableImage src="/Studios-NJ.png" title="Film Studios Graphic" width={1275} height={1650} alt="Film Studios Graphic" className="h-[clamp(111.01px,-27.75px+43.36vw,249.34px)]! sm:h-30!"/>
                 </div>
               </div>
               <div className="grid grid-cols-[auto_1fr] sm:flex sm:flex-row items-center justify-items-start gap-3 w-full sm:w-auto">

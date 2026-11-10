@@ -39,12 +39,12 @@ export default function Projects() {
 											<p>Figma</p>
 											<Image src="/react-logo.svg" width={24} height={24} alt="React Icon" className="inline-block w-6.5 h-auto "/>
 											<p>React</p>
-											<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="CSS Icon" className="inline-block w-6 h-auto "/>
+											<Image src="/tailwind-css-logo.svg" width={24} height={24} alt="Tailwind CSS Icon" className="inline-block w-6 h-auto "/>
 											<p>Tailwind CSS</p>
 										</div>
-										<p> Role: Product Designer & Full-Stack Developer </p>
+										<p> Role: Product Designer & Frontend Developer </p>
 										<p> Timeline: February 2025 - May 2025</p>
-										<p className="leading-relaxed mt-2"> Student-researched redesigned student portal focused on improving user efficiency from the current student portal, Workday. This was a semester-long project for Human Computer Interaction (CS 545), which included low, medium and our last iteration, the high fidelity prototype that included student-backed data via Jakob Nielsen's Heuristic Evaluation list to measure efficiency, brand authenticity, and prototype functionality.</p>
+										<p className="leading-relaxed mt-2"> Student-researched redesigned student portal focused on improving user efficiency from the current student portal, Workday. This was a semester-long project for Human-Computer Interaction (CS 545), which included low, medium and our last iteration, the high-fidelity prototype that included student-backed data via Jakob Nielsen's heuristic evaluation list to measure efficiency, brand authenticity, and prototype functionality.</p>
 						</div>
 					</div>
 					<div className="mb-4 ml-2.5 pb-16">
@@ -59,7 +59,7 @@ export default function Projects() {
 												<li>Our current portal takes 3 more clicks for the semester statement</li>
 												<li>Our current portal takes 4 more clicks for the course catalog</li>
 										</ul>
-										<p className="leading-relaxed"> Moreover, we decided on Jakob Nielsen's Heuristic Evaluation with designated tasks for our users to compare and contrast our proposed revision and our current student portal, including: </p>
+										<p className="leading-relaxed"> Moreover, we decided on Jakob Nielsen's heuristic evaluation with designated tasks for our users to compare and contrast our proposed revision and our current student portal, including: </p>
 										<ul className="list-disc list-inside leading-relaxed">
 												<li>Accessing their course schedule</li>
 												<li>Searching/filtering courses to take for next semester</li>
@@ -69,15 +69,15 @@ export default function Projects() {
 										</ul>
 										<h2 className="mt-4 mb-2 font-bold">Results & Learning</h2>
 										<p className="leading-relaxed">
-											We surveyed 5 students from our campus to measure efficiency as well as how they felt with their user experience with our high fidelity prototype and how their experience compares with the current student portal. The overall results are as follows:
+											We surveyed 5 students from our campus to measure efficiency as well as how they felt with their user experience with our high-fidelity prototype and how their experience compares with the current student portal. The overall results are as follows:
 										</p>
 										<ul className="list-disc list-inside leading-relaxed">
 											<li>100% of users could see themselves enjoying the prototype over the current portal, with 40% agreeing and 60% strongly agreeing</li>
 											<li>100% of users found that the our buttons were well integrated, with 20% agreeing and 80% strongly agreeing</li>
-											<li>80% of users disagreed that the prototype was not accommodating enough for both advanced users and inexperienced users</li>
+											<li>80% of users disagreed that the prototype was unaccommodating enough for both advanced users and inexperienced users</li>
 											<li>All users indicated a reduction in the number of clicks and time to navigate on each designated task, showing up to a 60% reduction of average clicks</li>
 										</ul>
-										<p className="leading-relaxed">Based on our feedback, we developed our high fidelity prototype via React and Tailwind CSS, to which I systematically refactored the React codebase to match our Figma specifications and fixed styling inconsistencies.
+										<p className="leading-relaxed">Based on our feedback, we developed our high-fidelity prototype via React and Tailwind CSS, to which I systematically refactored the React codebase to match our Figma specifications and fixed styling inconsistencies.
 										</p>
 				</div>
 				</div>

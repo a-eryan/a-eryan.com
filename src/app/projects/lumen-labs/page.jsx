@@ -50,9 +50,9 @@ export default function Projects() {
 			<div className="mb-4 ml-2.5 pb-16">
 					<h2 className="mt-4 mb-2">Design & Development Process</h2>
 					<p className="leading-relaxed"> 
-            I took the initiative in the beginning of the academic year to design the low fidelity prototype in Figma to validate the user flow and core features of the application with users before any development began. 
-            I also lead the initiative on the software architecture, effectively choosing the technology stack and pitching it to the team as well as our project sponsor. 
-            Upon the technical development phase of the project, I was responsible for designing the high fidelity prototype in Figma, as well as the site-wide frontend.
+            I took the initiative in the beginning of the academic year to design the low-fidelity prototype in Figma to validate the user flow and core features of the application with users before any development began. 
+            I also led the initiative on the software architecture, effectively choosing the technology stack and pitching it to the team as well as our project sponsor. 
+            Upon the technical development phase of the project, I was responsible for designing the high-fidelity prototype in Figma, as well as the site-wide frontend.
             The Figma prototype provided is an earlier version of the design system where the typography was more playful (Poppins for headers and Inter for body), given our former name (Bright Lights). The typography for the current design is more mature and professional (Instrument Serif for headers and Inter for body) to reflect formality and seriousness of the application.
             The overall design ethos of the application was to be modern and intuitive enough that graduate students would not have to be onboarded to use the application, while still leaving a unique brand identity of a modern solution to a common problem in current academia.
             I utilized the project sponsor's existing branding guidelines involving color, typography, logo and shapes to design the UI components and the overall site. 
@@ -64,7 +64,7 @@ export default function Projects() {
           <ul className="list-disc list-inside leading-relaxed">
             <li>Financial stress is real but accepted as structural: F-1 visa restrictions limiting income options, validating for a visa-aware career filtering feature.</li>
             <li>Students have assessed scientific feasibility yet lack basic market frameworks (value proposition, customer segmentation, market sizing).</li>
-            <li>Students rely on almost exclusively on informal connections or LinkedIn, with networking inequality causing a barrier due to advisor networks and personal confidence.</li>
+            <li>Students rely almost exclusively on informal connections or LinkedIn, with networking inequality causing a barrier due to advisor networks and personal confidence.</li>
             <li>Not every student wants to commercialize their research, validating for the need to provide options for users with career clarity rather than commercialization.</li>
             <li>The big three for career decisions: salary, location, and work-life balance, validating the need for the career assistant to lead with these priorities.</li>
             <li>Retention: One research director explicitly noted that many platforms already exist yet students do not use them consistently.</li>
