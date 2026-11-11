@@ -42,30 +42,34 @@ export default function Projects() {
           <p> Role: Product Designer & Webflow Developer</p>
           <p> Timeline: May 2026 - August 2026 </p>
           <p className="leading-relaxed">
-            Summer website redesign of Spendly, a B2B startup that went from a basic Webflow template with stock images to engaging UX illustrations and a more "deal-making" layout and design that reached 300+ monthly unique visitors. 
+            Summer website redesign of Spendly, a B2B startup targeting enterprise, investment banking & mergers and acquisitions, private equity, and partnership clients. Spendly went from a basic Webflow template with stock images to engaging UX illustrations and a more "dealmaking" layout and design that reached 300+ monthly unique visitors.
+
           </p>
         </div>
         </div>
         <div className="mb-4 ml-2.5 pb-16 ">
           <h2 className="mt-4 mb-2">Design & Development Process</h2>
           <p className="leading-relaxed"> 
-             The first step of the Spendly redesign project was understanding what the company's pain points were for their website on Webflow. The company claimed that the templated site felt too generic and that stock images were used to compensate for the lack of strong visuals, which were aligned to my initial impression. While continually learning about Spendly throughout several meetings for syncs across this project and other ones, I conducted a competitive analysis of successful financial technology (fintech) websites to identify what exactly a Spendly website could look like, to which the following sites inspired the final design:
+            The first step in the Spendly redesign project was understanding the company's website pain points. The company claimed that the templated site felt too generic, which aligned with my initial impression given the use of stock images to seemingly compensate for the lack of strong visuals. While continually learning about Spendly throughout several meetings for syncs across this project and other ones, I conducted a competitive analysis of successful financial technology (fintech) websites to identify what exactly a Spendly website could look like, and the following sites inspired the final design:
           </p>
           <ul className="list-disc list-inside leading-relaxed">
-            <li>Stripe's use of a dedicated statistics section with a stronger sense of visuals to reinforce the value proposition, as well as a stronger use of branding colors to emphasize certain sections such as the landing page. </li>
+            <li>Stripe's use of a dedicated statistics section with a stronger sense of visuals to reinforce the value proposition, as well as a stronger use of branding colors to emphasize certain sections such as the hero section.</li>
             <li>BILL's Spend & Expense's interactive yet automatic high-level step demonstration of the three steps (ingest, analyze, save).</li>
           </ul>
           <p className="leading-relaxed"> 
-            Next, I began the design process by creating a low-fidelity prototype via Figma to visualize the new layout and design of the Spendly website, with team members providing a prototype of their own via Claude Design to spark further discussion and ideas, which prompted my high-fidelity prototype that included four iterations before executing a final design on Webflow.
-            At this stage, the layout was finalized, however, there was still one pain point unresolved: the lack of strong visuals. Claude can generate a solid layout and I can translate it into an on-brand design, yet it fails to generate illustrations that do not feel AI-generated or commonly recognized as "AI slop". This is where BILL's Spend & Expense's interactive came into inspiration.
-            My primary UX illustrations that I felt were critical to the website's value proposition were the three-step illustrations that demonstrated how Spendly works and the animated isometric finance stack illustration on the hero section. I followed the same design ethos throughout the four additional pages dedicated to specific B2B verticals.
+            Next, I began the design process by creating a low-fidelity prototype via Figma to visualize the new layout and design of the Spendly website, with team members afterwards providing a prototype of their own via Claude Design, which provided an initial pre-approved layout and "dealmaking" text content that sparked further discussion and ideas for an on-brand high-fidelity prototype. The high-fidelity prototype went through four iterations, with the primary changes involving capturing a stronger use of branding colors with custom mesh gradients and UX illustrations to personalize and provide stronger visualizations to parse the value proposition of the product. My primary UX illustrations were the three-step illustrations showing how Spendly works, which drew on BILL’s step demonstration, and the animated isometric finance stack in the hero section. I followed the same design ethos throughout the four additional pages dedicated to specific B2B verticals: stronger emphasis on branding colors, and high-level, yet concise illustrations for the target audience.
           </p>
           <h2 className="mt-4 mb-2">Results & Learning</h2>
+          <blockquote className="border-l-4 border-primary pl-4 mt-4 mb-2">
+            <p className="leading-relaxed">
+              "The new website is a huge improvement over the old one. The design is much more modern and professional, and the content is much more clear and concise. The new website is also much more engaging, with the use of illustrations and animations. Overall, I am very happy with the new website and I think it will help us attract more customers." —Matthew Godley, Co-founder & CEO of Spendly (August 21st, 2026)
+            </p>
+          </blockquote>          
           <p className="leading-relaxed">
-            It was a great privilege to be the sole designer and developer of a redesign project for a startup with 300+ monthly unique visitors. Despite all the pivots that were made internally and at times feeling like no initial progress was being made, I persevered due to my professionalism and commitment to the company and the project, no matter how many initial designs or directions were initially scrapped in the process. 
-            On the technical side, I learned how to create more complex UX illustrations and utilized an AI workflow that didn't replace my interdisciplinary design and development skills, but rather amplified them with SEO audits and performance fixes (particularly with SVG files that were too large due to a rasterized export from Figma) that led to a high 90s PageSpeed Insights score for the website on both desktop and mobile.
+            It was a great privilege to be the sole designer and developer of a redesign project for a startup with 300+ monthly unique visitors. Despite all the pivots that were made internally and at times feeling like no initial progress was being made, I persevered due to my professionalism and commitment to the company and the project, no matter how many initial designs or directions were scrapped in the process. On the technical side, I learned how to create more complex UX illustrations (e.g., isometric illustrations via Figma) and utilized an AI workflow that didn't replace my interdisciplinary design and development skills, but rather amplified them with subtle motion design, SEO audits, and performance fixes (particularly with SVG files that were too large due to a rasterized export from Figma) that led to a high 90s PageSpeed Insights score for the website on both desktop and mobile.
           </p>
         </div>
+          
       </div>
       <Taskbar currentPage="Projects" />
     </div>    
